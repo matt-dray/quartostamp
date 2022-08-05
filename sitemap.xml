@@ -34,7 +34,19 @@
     <loc>/reference/stamp_footer.html</loc>
   </url>
   <url>
+    <loc>/reference/stamp_footnote.html</loc>
+  </url>
+  <url>
+    <loc>/reference/stamp_incremental.html</loc>
+  </url>
+  <url>
+    <loc>/reference/stamp_nonincremental.html</loc>
+  </url>
+  <url>
     <loc>/reference/stamp_notes.html</loc>
+  </url>
+  <url>
+    <loc>/reference/stamp_pause.html</loc>
   </url>
   <url>
     <loc>/reference/stamp_tabset.html</loc>
