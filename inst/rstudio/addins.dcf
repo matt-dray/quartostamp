@@ -1,4 +1,24 @@
+Name: Insert An Aside
+Description: Insert an aside to a Revealjs presentation slide
+Binding: stamp_aside
+Interactive: false
+
 Name: Insert Columns
 Description: Insert horizontal two-column layout with percentage widths
 Binding: stamp_columns
+Interactive: false
+
+Name: Insert Custom Footer
+Description: Insert a custom footer to a Revealjs presentation slide
+Binding: stamp_footer
+Interactive: false
+
+Name: Insert Speaker Notes
+Description: Insert speaker notes to a Revealjs presentation slide
+Binding: stamp_notes
+Interactive: false
+
+Name: Insert Tabset
+Description: Insert panel tabset to a Revealjs presentation slide
+Binding: stamp_tabset
 Interactive: false
