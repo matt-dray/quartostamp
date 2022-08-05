@@ -1,3 +1,9 @@
+
+#' Insert Aside
+#'
+#' Insert an aside to a Revealjs presentation slide
+#'
+#' @export
 stamp_aside <- function() {
   rstudioapi::insertText(
     paste0(
@@ -8,6 +14,11 @@ stamp_aside <- function() {
   )
 }
 
+#' Insert Columns
+#'
+#' Insert horizontal two-column layout with percentage widths
+#'
+#' @export
 stamp_columns <- function() {
   rstudioapi::insertText(
     paste0(
@@ -26,6 +37,11 @@ stamp_columns <- function() {
   )
 }
 
+#' Insert Custom Footer
+#'
+#' Insert a custom footer to a Revealjs presentation slide
+#'
+#' @export
 stamp_footer  <- function() {
   rstudioapi::insertText(
     paste0(
@@ -36,6 +52,11 @@ stamp_footer  <- function() {
   )
 }
 
+#' Insert Speaker Notes
+#'
+#' Insert speaker notes to a Revealjs presentation slide
+#'
+#' @export
 stamp_notes <- function() {
   rstudioapi::insertText(
     paste0(
@@ -46,6 +67,11 @@ stamp_notes <- function() {
   )
 }
 
+#' Insert Tabset
+#'
+#' Insert panel tabset to a Revealjs presentation slide
+#'
+#' @export
 stamp_tabset <- function() {
   rstudioapi::insertText(
     paste0(
@@ -63,4 +89,3 @@ stamp_tabset <- function() {
     )
   )
 }
-

@@ -9,7 +9,7 @@ An R package containing an [RStudio Addin](https://rstudio.github.io/rstudioaddi
 
 See the:
 
-* [package website](https://matt-dray.github.io/quartostamp/) for the full list of available functions
+* [package website](https://matt-dray.github.io/quartostamp/) for the [full list of available functions](https://matt-dray.github.io/quartostamp/reference/index.html)
 * [Quarto website](https://quarto.org/docs/guide/) for full documentation
 
 To install this package:
