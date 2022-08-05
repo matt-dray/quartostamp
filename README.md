@@ -6,7 +6,9 @@
 [![R-CMD-check](https://github.com/matt-dray/quartostamp/workflows/R-CMD-check/badge.svg)](https://github.com/matt-dray/quartostamp/actions)
 <!-- badges: end -->
 
-An R package containing an [RStudio Addin](https://rstudio.github.io/rstudioaddins/) to insert useful little divs and classes into your Revealjs presentations made with Quarto.
+An R package containing an [RStudio Addin](https://rstudio.github.io/rstudioaddins/) to insert some useful divs and classes into your [Revealjs presentations made with Quarto](https://quarto.org/docs/presentations/revealjs/).
+
+Why 'quartostamp'? You can physically stamp some pre-written type into a [literal quarto document](https://en.wikipedia.org/wiki/Quarto); you can digitally stamp some pre-written elements into your qmd file.
 
 See the:
 
