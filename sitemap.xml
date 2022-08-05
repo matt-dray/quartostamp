@@ -31,6 +31,9 @@
     <loc>/reference/stamp_columns.html</loc>
   </url>
   <url>
+    <loc>/reference/stamp_divider.html</loc>
+  </url>
+  <url>
     <loc>/reference/stamp_footer.html</loc>
   </url>
   <url>
@@ -47,6 +50,12 @@
   </url>
   <url>
     <loc>/reference/stamp_pause.html</loc>
+  </url>
+  <url>
+    <loc>/reference/stamp_scrollable.html</loc>
+  </url>
+  <url>
+    <loc>/reference/stamp_smaller.html</loc>
   </url>
   <url>
     <loc>/reference/stamp_tabset.html</loc>

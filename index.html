@@ -57,7 +57,7 @@
 <div class="page-header"><h1 id="quartostamp">{quartostamp}<a class="anchor" aria-label="anchor" href="#quartostamp"></a>
 </h1></div>
 <!-- badges: start -->
-<p>An R package containing an <a href="https://rstudio.github.io/rstudioaddins/" class="external-link">RStudio Addin</a> to help you insert (‘stamp’) useful little code blocks into your Quarto document.</p>
+<p>An R package containing an <a href="https://rstudio.github.io/rstudioaddins/" class="external-link">RStudio Addin</a> to insert useful little divs and classes into your Revealjs presentations made with Quarto.</p>
 <p>See the:</p>
 <ul>
 <li>
@@ -66,11 +66,16 @@
 <li>
 <a href="https://quarto.org/docs/guide/" class="external-link">Quarto website</a> for full documentation</li>
 </ul>
-<p>To install this package:</p>
+<p>To install this package, run the following and then restart R:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span>  <span class="co"># if not yet installed</span></span>
 <span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"matt-dray/quartostamp"</span><span class="op">)</span></span></code></pre></div>
-<p>Then restart RStudio and you’ll see the functions under ‘QUARTOSTAMP’ in the Addins dropdown.</p>
+<p>To use:</p>
+<ol style="list-style-type: decimal">
+<li>Put the cursor in your Quarto file where you’d like to insert a div or class</li>
+<li>Click the ‘RStudio Addins’ dropdown at the top of the RStudio IDE</li>
+<li>Scroll/search for ‘QUARTOSTAMP’ and click the function you want</li>
+</ol>
 </div>
   </main><aside class="col-md-3"><div class="license">
 <h2 data-toc-skip>License</h2>
