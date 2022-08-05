@@ -1,0 +1,4 @@
+Name: Insert Columns
+Description: Insert horizontal two-column layout with percentage widths
+Binding: stamp_columns
+Interactive: false
