@@ -2,10 +2,11 @@
 % Please edit documentation in R/stamps.R
 \name{stamp_columns}
 \alias{stamp_columns}
-\title{Insert Columns}
+\title{Insert Column Layout}
 \usage{
 stamp_columns()
 }
 \description{
-Insert horizontal two-column layout with percentage widths.
+Insert a div for a horizontal two-column layout with percentage widths in a
+Revealjs presentation slide.
 }

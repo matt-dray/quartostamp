@@ -1,7 +1,7 @@
 
 #' Insert Aside
 #'
-#' Insert an aside to a Revealjs presentation slide.
+#' Insert a div that creates an 'aside' in a Revealjs presentation slide.
 #'
 #' @export
 stamp_aside <- function() {
@@ -9,14 +9,15 @@ stamp_aside <- function() {
     paste0(
       "::: aside\n",
       "Some additional commentary of more peripheral interest.\n",
-      ":::\n"
+      ":::"
     )
   )
 }
 
-#' Insert Columns
+#' Insert Column Layout
 #'
-#' Insert horizontal two-column layout with percentage widths.
+#' Insert a div for a horizontal two-column layout with percentage widths in a
+#' Revealjs presentation slide.
 #'
 #' @export
 stamp_columns <- function() {
@@ -32,14 +33,24 @@ stamp_columns <- function() {
       "Right column\n",
       ":::\n",
       "\n",
-      "::::\n"
+      "::::"
     )
   )
 }
 
+#' Insert Slide Divider
+#'
+#' Insert a slide divider in a Revealjs presentation (for slides without
+#' titles).
+#'
+#' @export
+stamp_divider  <- function() {
+  rstudioapi::insertText("---")
+}
+
 #' Insert Custom Footer
 #'
-#' Insert a custom footer to a Revealjs presentation slide.
+#' Insert a custom footer div in a Revealjs presentation slide.
 #'
 #' @export
 stamp_footer  <- function() {
@@ -47,14 +58,14 @@ stamp_footer  <- function() {
     paste0(
       "::: footer\n",
       "Custom footer text\n",
-      ":::\n"
+      ":::"
     )
   )
 }
 
 #' Insert Footnote
 #'
-#' Insert a footnote marker to a Revealjs presentation slide.
+#' Insert a footnote marker in a Revealjs presentation slide.
 #'
 #' @export
 stamp_footnote  <- function() {
@@ -63,8 +74,8 @@ stamp_footnote  <- function() {
 
 #' Insert Incremental List
 #'
-#' Insert a list to a Revealjs presentation slide that is revealed
-#' incrementally.
+#' Insert a list-containing div in a Revealjs presentation slide that is
+#' revealed incrementally.
 #'
 #' @export
 stamp_incremental <- function() {
@@ -73,15 +84,15 @@ stamp_incremental <- function() {
       "::: {.incremental}\n",
       "- Eat spaghetti\n",
       "- Drink wine\n",
-      ":::\n"
+      ":::"
     )
   )
 }
 
-#' Insert Non-incremental List
+#' Insert Non-Incremental List
 #'
-#' Insert a list to a Revealjs presentation slide that is not revealed
-#' incrementally  (to override global incremental reveal).
+#' Insert a list-containing div to a Revealjs presentation slide that is not
+#' revealed incrementally  (overrides a global incremental reveal).
 #'
 #' @export
 stamp_nonincremental <- function() {
@@ -90,23 +101,23 @@ stamp_nonincremental <- function() {
       "::: {.nonincremental}\n",
       "- Eat spaghetti\n",
       "- Drink wine\n",
-      ":::\n"
+      ":::"
     )
   )
 }
 
 #' Insert Pause
 #'
-#' Insert a pause into a Revealjs presentation slide.
+#' Insert a pause marker into a Revealjs presentation slide.
 #'
 #' @export
 stamp_pause <- function() {
-  rstudioapi::insertText(". . .\n")
+  rstudioapi::insertText(". . .")
 }
 
 #' Insert Speaker Notes
 #'
-#' Insert speaker notes to a Revealjs presentation slide.
+#' Insert a speaker notes div in a Revealjs presentation slide.
 #'
 #' @export
 stamp_notes <- function() {
@@ -114,14 +125,34 @@ stamp_notes <- function() {
     paste0(
       "::: {.notes}\n",
       "Speaker notes go here.\n",
-      ":::\n"
+      ":::"
     )
   )
 }
 
+#' Insert Smaller Font
+#'
+#' Insert a class that makes the font smaller in a Revealjs presentation slide.
+#' (place on the same line as the slide title).
+#'
+#' @export
+stamp_smaller <- function() {
+  rstudioapi::insertText("{.smaller}")
+}
+
+#' Insert Scrollable Content
+#'
+#' Insert a class that allows content to be scrolled if the slide is too small
+#' to hold it.
+#'
+#' @export
+stamp_scrollable <- function() {
+  rstudioapi::insertText("{.scrollable}")
+}
+
 #' Insert Tabset
 #'
-#' Insert panel tabset to a Revealjs presentation slide.
+#' Insert a panel tabset div to a Revealjs presentation slide.
 #'
 #' @export
 stamp_tabset <- function() {
@@ -137,7 +168,7 @@ stamp_tabset <- function() {
       "\n",
       "Content for `Tab B`\n",
       "\n",
-      ":::\n"
+      ":::"
     )
   )
 }

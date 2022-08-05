@@ -2,11 +2,11 @@
 % Please edit documentation in R/stamps.R
 \name{stamp_nonincremental}
 \alias{stamp_nonincremental}
-\title{Insert Non-incremental List}
+\title{Insert Non-Incremental List}
 \usage{
 stamp_nonincremental()
 }
 \description{
-Insert a list to a Revealjs presentation slide that is not revealed
-incrementally  (to override global incremental reveal).
+Insert a list-containing div to a Revealjs presentation slide that is not
+revealed incrementally  (overrides a global incremental reveal).
 }

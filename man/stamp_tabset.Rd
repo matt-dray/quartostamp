@@ -7,5 +7,5 @@
 stamp_tabset()
 }
 \description{
-Insert panel tabset to a Revealjs presentation slide.
+Insert a panel tabset div to a Revealjs presentation slide.
 }

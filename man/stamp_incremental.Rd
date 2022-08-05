@@ -7,6 +7,6 @@
 stamp_incremental()
 }
 \description{
-Insert a list to a Revealjs presentation slide that is revealed
-incrementally.
+Insert a list-containing div in a Revealjs presentation slide that is
+revealed incrementally.
 }

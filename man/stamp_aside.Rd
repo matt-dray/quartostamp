@@ -7,5 +7,5 @@
 stamp_aside()
 }
 \description{
-Insert an aside to a Revealjs presentation slide.
+Insert a div that creates an 'aside' in a Revealjs presentation slide.
 }

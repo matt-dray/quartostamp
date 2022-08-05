@@ -7,5 +7,5 @@
 stamp_footer()
 }
 \description{
-Insert a custom footer to a Revealjs presentation slide.
+Insert a custom footer div in a Revealjs presentation slide.
 }

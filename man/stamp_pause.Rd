@@ -7,5 +7,5 @@
 stamp_pause()
 }
 \description{
-Insert a pause into a Revealjs presentation slide.
+Insert a pause marker into a Revealjs presentation slide.
 }

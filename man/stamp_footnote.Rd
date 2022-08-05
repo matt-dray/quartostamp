@@ -7,5 +7,5 @@
 stamp_footnote()
 }
 \description{
-Insert a footnote marker to a Revealjs presentation slide.
+Insert a footnote marker in a Revealjs presentation slide.
 }
