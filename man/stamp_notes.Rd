@@ -7,5 +7,5 @@
 stamp_notes()
 }
 \description{
-Insert speaker notes to a Revealjs presentation slide
+Insert speaker notes to a Revealjs presentation slide.
 }

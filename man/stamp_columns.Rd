@@ -7,5 +7,5 @@
 stamp_columns()
 }
 \description{
-Insert horizontal two-column layout with percentage widths
+Insert horizontal two-column layout with percentage widths.
 }

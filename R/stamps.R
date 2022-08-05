@@ -1,7 +1,7 @@
 
 #' Insert Aside
 #'
-#' Insert an aside to a Revealjs presentation slide
+#' Insert an aside to a Revealjs presentation slide.
 #'
 #' @export
 stamp_aside <- function() {
@@ -16,7 +16,7 @@ stamp_aside <- function() {
 
 #' Insert Columns
 #'
-#' Insert horizontal two-column layout with percentage widths
+#' Insert horizontal two-column layout with percentage widths.
 #'
 #' @export
 stamp_columns <- function() {
@@ -39,7 +39,7 @@ stamp_columns <- function() {
 
 #' Insert Custom Footer
 #'
-#' Insert a custom footer to a Revealjs presentation slide
+#' Insert a custom footer to a Revealjs presentation slide.
 #'
 #' @export
 stamp_footer  <- function() {
@@ -52,9 +52,61 @@ stamp_footer  <- function() {
   )
 }
 
+#' Insert Footnote
+#'
+#' Insert a footnote marker to a Revealjs presentation slide.
+#'
+#' @export
+stamp_footnote  <- function() {
+  rstudioapi::insertText("^[A footnote]")
+}
+
+#' Insert Incremental List
+#'
+#' Insert a list to a Revealjs presentation slide that is revealed
+#' incrementally.
+#'
+#' @export
+stamp_incremental <- function() {
+  rstudioapi::insertText(
+    paste0(
+      "::: {.incremental}\n",
+      "- Eat spaghetti\n",
+      "- Drink wine\n",
+      ":::\n"
+    )
+  )
+}
+
+#' Insert Non-incremental List
+#'
+#' Insert a list to a Revealjs presentation slide that is not revealed
+#' incrementally  (to override global incremental reveal).
+#'
+#' @export
+stamp_nonincremental <- function() {
+  rstudioapi::insertText(
+    paste0(
+      "::: {.nonincremental}\n",
+      "- Eat spaghetti\n",
+      "- Drink wine\n",
+      ":::\n"
+    )
+  )
+}
+
+#' Insert Pause
+#'
+#' Insert a pause into a Revealjs presentation slide.
+#'
+#' @export
+stamp_pause <- function() {
+  rstudioapi::insertText(". . .\n")
+}
+
 #' Insert Speaker Notes
 #'
-#' Insert speaker notes to a Revealjs presentation slide
+#' Insert speaker notes to a Revealjs presentation slide.
 #'
 #' @export
 stamp_notes <- function() {
@@ -69,7 +121,7 @@ stamp_notes <- function() {
 
 #' Insert Tabset
 #'
-#' Insert panel tabset to a Revealjs presentation slide
+#' Insert panel tabset to a Revealjs presentation slide.
 #'
 #' @export
 stamp_tabset <- function() {

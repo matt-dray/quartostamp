@@ -13,6 +13,26 @@ Description: Insert a custom footer to a Revealjs presentation slide
 Binding: stamp_footer
 Interactive: false
 
+Name: Insert Footnote
+Description: Insert a footnote marker to a Revealjs presentation slide
+Binding: stamp_footnote
+Interactive: false
+
+Name: Insert Incremental List
+Description: Insert a list to a Revealjs presentation slide that is revealed incrementally
+Binding: stamp_incremental
+Interactive: false
+
+Name: Insert Non-incremental List
+Description: Insert a list to a Revealjs presentation slide that is not revealed incrementally (to override global incremental reveal)
+Binding: stamp_nonincremental
+Interactive: false
+
+Name: Insert Pause
+Description: Insert a pause into a Revealjs presentation slide
+Binding: stamp_pause
+Interactive: false
+
 Name: Insert Speaker Notes
 Description: Insert speaker notes to a Revealjs presentation slide
 Binding: stamp_notes
