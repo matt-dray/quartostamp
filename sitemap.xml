@@ -28,6 +28,21 @@
     <loc>/reference/stamp_aside.html</loc>
   </url>
   <url>
+    <loc>/reference/stamp_callout_caution.html</loc>
+  </url>
+  <url>
+    <loc>/reference/stamp_callout_important.html</loc>
+  </url>
+  <url>
+    <loc>/reference/stamp_callout_note.html</loc>
+  </url>
+  <url>
+    <loc>/reference/stamp_callout_tip.html</loc>
+  </url>
+  <url>
+    <loc>/reference/stamp_callout_warning.html</loc>
+  </url>
+  <url>
     <loc>/reference/stamp_columns.html</loc>
   </url>
   <url>
