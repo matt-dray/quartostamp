@@ -6,7 +6,10 @@
 [![R-CMD-check](https://github.com/matt-dray/quartostamp/workflows/R-CMD-check/badge.svg)](https://github.com/matt-dray/quartostamp/actions)
 <!-- badges: end -->
 
+<<<<<<< HEAD
 An R package containing an [RStudio Addin](https://rstudio.github.io/rstudioaddins/) to insert useful little divs and classes for documents made with Quarto.
+
+Why 'quartostamp'? You can physically stamp some pre-written type into a [literal quarto document](https://en.wikipedia.org/wiki/Quarto); you can digitally stamp some pre-written elements into your qmd file.
 
 See the:
 
