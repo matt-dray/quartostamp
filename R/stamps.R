@@ -14,6 +14,102 @@ stamp_aside <- function() {
   )
 }
 
+
+#' Insert 'Note' Callout Block
+#'
+#' Insert a callout block of type 'note'.
+#'
+#' @export
+stamp_callout_note <- function() {
+  rstudioapi::insertText(
+    paste0(
+      ":::{.callout-note collapse=false appearance='default' icon=true}\n",
+      "## Optional caption (note)\n",
+      "- Make expandable with 'collapse=true'\n",
+      "- Remove 'collapse' to prevent expandability\n",
+      "- Set appearance to 'default', 'simple' or 'minimal'\n",
+      "- Remove icon with 'icon=false'\n",
+      ":::"
+    )
+  )
+}
+
+#' Insert 'Warning' Callout Block
+#'
+#' Insert a callout block of type 'warning'.
+#'
+#' @export
+stamp_callout_warning <- function() {
+  rstudioapi::insertText(
+    paste0(
+      ":::{.callout-warning collapse=false appearance='default' icon=true}\n",
+      "## Optional caption (warning)\n",
+      "- Make expandable with 'collapse=true'\n",
+      "- Remove 'collapse' to prevent expandability\n",
+      "- Set appearance to 'default', 'simple' or 'minimal'\n",
+      "- Remove icon with 'icon=false'\n",
+      ":::"
+    )
+  )
+}
+
+#' Insert 'Important' Callout Block
+#'
+#' Insert a callout block of type 'important'.
+#'
+#' @export
+stamp_callout_important <- function() {
+  rstudioapi::insertText(
+    paste0(
+      ":::{.callout-important collapse=false appearance='default' icon=true}\n",
+      "## Optional caption (important)\n",
+      "- Make expandable with 'collapse=true'\n",
+      "- Remove 'collapse' to prevent expandability\n",
+      "- Set appearance to 'default', 'simple' or 'minimal'\n",
+      "- Remove icon with 'icon=false'\n",
+      ":::"
+    )
+  )
+}
+
+#' Insert 'Tip' Callout Block
+#'
+#' Insert a callout block of type 'tip'.
+#'
+#' @export
+stamp_callout_tip <- function() {
+  rstudioapi::insertText(
+    paste0(
+      ":::{.callout-tip collapse=false appearance='default' icon=true}\n",
+      "## Optional caption (tip)\n",
+      "- Make expandable with 'collapse=true'\n",
+      "- Remove 'collapse' to prevent expandability\n",
+      "- Set appearance to 'default', 'simple' or 'minimal'\n",
+      "- Remove icon with 'icon=false'\n",
+      ":::"
+    )
+  )
+}
+
+#' Insert 'Caution' Callout Block
+#'
+#' Insert a callout block of type 'caution'.
+#'
+#' @export
+stamp_callout_caution <- function() {
+  rstudioapi::insertText(
+    paste0(
+      ":::{.callout-caution collapse=false appearance='default' icon=true}\n",
+      "## Optional caption (caution)\n",
+      "- Make expandable with 'collapse=true'\n",
+      "- Remove 'collapse' to prevent expandability\n",
+      "- Set appearance to 'default', 'simple' or 'minimal'\n",
+      "- Remove icon with 'icon=false'\n",
+      ":::"
+    )
+  )
+}
+
 #' Insert Column Layout
 #'
 #' Insert a div for a horizontal two-column layout with percentage widths in a

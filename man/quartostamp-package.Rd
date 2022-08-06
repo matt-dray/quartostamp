@@ -4,7 +4,7 @@
 \name{quartostamp-package}
 \alias{quartostamp}
 \alias{quartostamp-package}
-\title{quartostamp: Insert Quarto Helpers}
+\title{quartostamp: RStudio Addin to Insert Quarto Helpers}
 \description{
 An RStudio Addin to help you insert ('stamp') useful little code blocks into your Quarto document.
 }

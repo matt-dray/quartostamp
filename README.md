@@ -6,14 +6,14 @@
 [![R-CMD-check](https://github.com/matt-dray/quartostamp/workflows/R-CMD-check/badge.svg)](https://github.com/matt-dray/quartostamp/actions)
 <!-- badges: end -->
 
-An R package containing an [RStudio Addin](https://rstudio.github.io/rstudioaddins/) to insert useful little divs and classes into your Revealjs presentations made with Quarto.
+An R package containing an [RStudio Addin](https://rstudio.github.io/rstudioaddins/) to insert useful little divs and classes for documents made with Quarto.
 
 See the:
 
 * [package website](https://matt-dray.github.io/quartostamp/) for the [full list of available functions](https://matt-dray.github.io/quartostamp/reference/index.html)
 * [Quarto website](https://quarto.org/docs/guide/) for full documentation
 
-To install this package, run the following and then restart R:
+To install this package, run the following and then restart RStudio:
 
 ``` r
 install.packages("remotes")  # if not yet installed

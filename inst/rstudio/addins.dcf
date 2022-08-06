@@ -3,6 +3,31 @@ Description: Insert a div that creates an 'aside' in a Revealjs presentation sli
 Binding: stamp_aside
 Interactive: false
 
+Name: Insert 'Note' Callout Block
+Description: Insert a callout block of type 'note'.
+Binding: stamp_callout_note
+Interactive: false
+
+Name: Insert 'Warning' Callout Block
+Description: Insert a callout block of type 'warning'.
+Binding: stamp_callout_warning
+Interactive: false
+
+Name: Insert 'Important' Callout Block
+Description: Insert a callout block of type 'important'.
+Binding: stamp_callout_important
+Interactive: false
+
+Name: Insert 'Tip' Callout Block
+Description: Insert a callout block of type 'tip'.
+Binding: stamp_callout_tip
+Interactive: false
+
+Name: Insert 'Caution' Callout Block
+Description: Insert a callout block of type 'caution'.
+Binding: stamp_callout_caution
+Interactive: false
+
 Name: Insert Column Layout
 Description: Insert a div for a horizontal two-column layout with percentage widths in a Revealjs presentation slide.
 Binding: stamp_columns

@@ -1,3 +1,7 @@
+# quartostamp 0.0.0.9001
+
+* Added callout blocks with `stamp_callout_*()` (#1, suggested by @IndrajeetPatil).
+
 # quartostamp 0.0.0.9000
 
 * Set up package with license, news, readme.

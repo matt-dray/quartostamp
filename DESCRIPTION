@@ -1,6 +1,6 @@
 Package: quartostamp
-Title: Insert Quarto Helpers
-Version: 0.0.0.9000
+Title: RStudio Addin to Insert Quarto Helpers
+Version: 0.0.0.9001
 Authors@R: person("Matt", "Dray", , "mwdray@gmail.com", role = c("aut", "cre"))
 Description: An RStudio Addin to help you insert ('stamp') useful little code blocks into your Quarto document.
 License: MIT + file LICENSE
