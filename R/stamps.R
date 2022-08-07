@@ -25,7 +25,7 @@ stamp_callout_note <- function() {
     paste0(
       ":::{.callout-note collapse=false appearance='default' icon=true}\n",
       "## Optional caption (note)\n",
-      "- Make expandable with 'collapse=true'\n",
+      "- Hide callout body with 'collapse=true'\n",
       "- Remove 'collapse' to prevent expandability\n",
       "- Set appearance to 'default', 'simple' or 'minimal'\n",
       "- Remove icon with 'icon=false'\n",
@@ -44,7 +44,7 @@ stamp_callout_warning <- function() {
     paste0(
       ":::{.callout-warning collapse=false appearance='default' icon=true}\n",
       "## Optional caption (warning)\n",
-      "- Make expandable with 'collapse=true'\n",
+      "- Hide callout body with 'collapse=true'\n",
       "- Remove 'collapse' to prevent expandability\n",
       "- Set appearance to 'default', 'simple' or 'minimal'\n",
       "- Remove icon with 'icon=false'\n",
@@ -63,7 +63,7 @@ stamp_callout_important <- function() {
     paste0(
       ":::{.callout-important collapse=false appearance='default' icon=true}\n",
       "## Optional caption (important)\n",
-      "- Make expandable with 'collapse=true'\n",
+      "- Hide callout body with 'collapse=true'\n",
       "- Remove 'collapse' to prevent expandability\n",
       "- Set appearance to 'default', 'simple' or 'minimal'\n",
       "- Remove icon with 'icon=false'\n",
@@ -82,7 +82,7 @@ stamp_callout_tip <- function() {
     paste0(
       ":::{.callout-tip collapse=false appearance='default' icon=true}\n",
       "## Optional caption (tip)\n",
-      "- Make expandable with 'collapse=true'\n",
+      "- Hide callout body with 'collapse=true'\n",
       "- Remove 'collapse' to prevent expandability\n",
       "- Set appearance to 'default', 'simple' or 'minimal'\n",
       "- Remove icon with 'icon=false'\n",
@@ -101,7 +101,7 @@ stamp_callout_caution <- function() {
     paste0(
       ":::{.callout-caution collapse=false appearance='default' icon=true}\n",
       "## Optional caption (caution)\n",
-      "- Make expandable with 'collapse=true'\n",
+      "- Hide callout body with 'collapse=true'\n",
       "- Remove 'collapse' to prevent expandability\n",
       "- Set appearance to 'default', 'simple' or 'minimal'\n",
       "- Remove icon with 'icon=false'\n",
