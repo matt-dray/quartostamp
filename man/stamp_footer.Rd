@@ -9,3 +9,13 @@ stamp_footer()
 \description{
 Insert a custom footer div in a Revealjs presentation slide.
 }
+\details{
+Output looks like this:\preformatted{::: footer
+Custom footer text
+:::
+
+}
+}
+\references{
+\href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
+}

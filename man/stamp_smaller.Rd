@@ -7,6 +7,13 @@
 stamp_smaller()
 }
 \description{
-Insert a class that makes the font smaller in a Revealjs presentation slide.
+Insert a class that makes the font smaller in a Revealjs presentation slide
 (place on the same line as the slide title).
+}
+\details{
+Output looks like this:\preformatted{\{.smaller\}
+}
+}
+\references{
+\href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
 }

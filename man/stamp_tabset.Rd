@@ -9,3 +9,21 @@ stamp_tabset()
 \description{
 Insert a panel tabset div to a Revealjs presentation slide.
 }
+\details{
+Output looks like this:\preformatted{::: \{.panel-tabset\}
+
+### Tab A
+
+Content for Tab A
+
+### Tab B
+
+Content for Tab B
+
+:::
+
+}
+}
+\references{
+\href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
+}

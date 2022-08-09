@@ -7,5 +7,20 @@
 stamp_callout_note()
 }
 \description{
-Insert a callout block of type 'note'.
+Insert a callout-block div of type 'note', which has a blue accent and
+a letter 'i' icon.
+}
+\details{
+Output looks like this:\preformatted{:::\{.callout-note collapse=false appearance='default' icon=true\}
+## Optional caption (note)
+- Hide callout body with 'collapse=true'
+- Remove 'collapse' to prevent expandability
+- Set appearance to 'default', 'simple' or 'minimal'
+- Remove icon with 'icon=false'
+:::
+
+}
+}
+\references{
+\href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
 }

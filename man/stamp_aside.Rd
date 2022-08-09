@@ -9,3 +9,13 @@ stamp_aside()
 \description{
 Insert a div that creates an 'aside' in a Revealjs presentation slide.
 }
+\details{
+Output looks like this:\preformatted{::: aside
+Additional commentary.
+:::
+
+}
+}
+\references{
+\href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
+}

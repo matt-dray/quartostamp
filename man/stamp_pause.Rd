@@ -9,3 +9,11 @@ stamp_pause()
 \description{
 Insert a pause marker into a Revealjs presentation slide.
 }
+\details{
+Output looks like this:\preformatted{. . .
+
+}
+}
+\references{
+\href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
+}

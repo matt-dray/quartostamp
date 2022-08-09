@@ -9,3 +9,13 @@ stamp_notes()
 \description{
 Insert a speaker notes div in a Revealjs presentation slide.
 }
+\details{
+Output looks like this:\preformatted{::: \{.notes\}
+Speaker notes (press 's' when presenting to switch to speaker mode).
+:::
+
+}
+}
+\references{
+\href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
+}

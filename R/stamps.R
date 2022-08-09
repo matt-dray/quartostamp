@@ -3,13 +3,25 @@
 #'
 #' Insert a div that creates an 'aside' in a Revealjs presentation slide.
 #'
+#' @details
+#' Output looks like this:
+#' ```
+#' ::: aside
+#' Additional commentary.
+#' :::
+#'
+#' ```
+#'
+#' @references
+#' [The Quarto documentation website.](https://quarto.org/docs/reference/)
+#'
 #' @export
 stamp_aside <- function() {
   rstudioapi::insertText(
     paste0(
       "::: aside\n",
-      "Some additional commentary of more peripheral interest.\n",
-      ":::"
+      "Additional commentary.\n",
+      ":::\n"
     )
   )
 }
@@ -17,7 +29,24 @@ stamp_aside <- function() {
 
 #' Insert 'Note' Callout Block
 #'
-#' Insert a callout block of type 'note'.
+#' Insert a callout-block div of type 'note', which has a blue accent and
+#' a letter 'i' icon.
+#'
+#' @details
+#' Output looks like this:
+#' ```
+#' :::{.callout-note collapse=false appearance='default' icon=true}
+#' ## Optional caption (note)
+#' - Hide callout body with 'collapse=true'
+#' - Remove 'collapse' to prevent expandability
+#' - Set appearance to 'default', 'simple' or 'minimal'
+#' - Remove icon with 'icon=false'
+#' :::
+#'
+#' ```
+#'
+#' @references
+#' [The Quarto documentation website.](https://quarto.org/docs/reference/)
 #'
 #' @export
 stamp_callout_note <- function() {
@@ -29,14 +58,31 @@ stamp_callout_note <- function() {
       "- Remove 'collapse' to prevent expandability\n",
       "- Set appearance to 'default', 'simple' or 'minimal'\n",
       "- Remove icon with 'icon=false'\n",
-      ":::"
+      ":::\n"
     )
   )
 }
 
 #' Insert 'Warning' Callout Block
 #'
-#' Insert a callout block of type 'warning'.
+#' Insert a callout-block div of type 'warning', which has a yellow accent and
+#' a warning-triangle icon.
+#'
+#' @details
+#' Output looks like this:
+#' ```
+#' :::{.callout-warning collapse=false appearance='default' icon=true}
+#' ## Optional caption (warning)
+#' - Hide callout body with 'collapse=true'
+#' - Remove 'collapse' to prevent expandability
+#' - Set appearance to 'default', 'simple' or 'minimal'
+#' - Remove icon with 'icon=false'
+#' :::
+#'
+#' ```
+#'
+#' @references
+#' [The Quarto documentation website.](https://quarto.org/docs/reference/)
 #'
 #' @export
 stamp_callout_warning <- function() {
@@ -48,14 +94,31 @@ stamp_callout_warning <- function() {
       "- Remove 'collapse' to prevent expandability\n",
       "- Set appearance to 'default', 'simple' or 'minimal'\n",
       "- Remove icon with 'icon=false'\n",
-      ":::"
+      ":::\n"
     )
   )
 }
 
 #' Insert 'Important' Callout Block
 #'
-#' Insert a callout block of type 'important'.
+#' Insert a callout-block div of type 'important', which has a red accent and
+#' an exclamation-point icon.
+#'
+#' @details
+#' Output looks like this:
+#' ```
+#' :::{.callout-important collapse=false appearance='default' icon=true}
+#' ## Optional caption (important)
+#' - Hide callout body with 'collapse=true'
+#' - Remove 'collapse' to prevent expandability
+#' - Set appearance to 'default', 'simple' or 'minimal'
+#' - Remove icon with 'icon=false'
+#' :::
+#'
+#' ```
+#'
+#' @references
+#' [The Quarto documentation website.](https://quarto.org/docs/reference/)
 #'
 #' @export
 stamp_callout_important <- function() {
@@ -67,14 +130,31 @@ stamp_callout_important <- function() {
       "- Remove 'collapse' to prevent expandability\n",
       "- Set appearance to 'default', 'simple' or 'minimal'\n",
       "- Remove icon with 'icon=false'\n",
-      ":::"
+      ":::\n"
     )
   )
 }
 
 #' Insert 'Tip' Callout Block
 #'
-#' Insert a callout block of type 'tip'.
+#' Insert a callout-block div of type 'tip', which has an green accent and
+#' a lightbulb icon.
+#'
+#' @details
+#' Output looks like this:
+#' ```
+#' :::{.callout-tip collapse=false appearance='default' icon=true}
+#' ## Optional caption (tip)
+#' - Hide callout body with 'collapse=true'
+#' - Remove 'collapse' to prevent expandability
+#' - Set appearance to 'default', 'simple' or 'minimal'
+#' - Remove icon with 'icon=false'
+#' :::
+#'
+#' ```
+#'
+#' @references
+#' [The Quarto documentation website.](https://quarto.org/docs/reference/)
 #'
 #' @export
 stamp_callout_tip <- function() {
@@ -86,14 +166,31 @@ stamp_callout_tip <- function() {
       "- Remove 'collapse' to prevent expandability\n",
       "- Set appearance to 'default', 'simple' or 'minimal'\n",
       "- Remove icon with 'icon=false'\n",
-      ":::"
+      ":::\n"
     )
   )
 }
 
 #' Insert 'Caution' Callout Block
 #'
-#' Insert a callout block of type 'caution'.
+#' Insert a callout-block div of type 'caution', which has an orange accent and
+#' a traffic-cone icon.
+#'
+#' @details
+#' Output looks like this:
+#' ```
+#' :::{.callout-caution collapse=false appearance='default' icon=true}
+#' ## Optional caption (caution)
+#' - Hide callout body with 'collapse=true'
+#' - Remove 'collapse' to prevent expandability
+#' - Set appearance to 'default', 'simple' or 'minimal'
+#' - Remove icon with 'icon=false'
+#' :::
+#'
+#' ```
+#'
+#' @references
+#' [The Quarto documentation website.](https://quarto.org/docs/reference/)
 #'
 #' @export
 stamp_callout_caution <- function() {
@@ -105,7 +202,7 @@ stamp_callout_caution <- function() {
       "- Remove 'collapse' to prevent expandability\n",
       "- Set appearance to 'default', 'simple' or 'minimal'\n",
       "- Remove icon with 'icon=false'\n",
-      ":::"
+      ":::\n"
     )
   )
 }
@@ -114,6 +211,26 @@ stamp_callout_caution <- function() {
 #'
 #' Insert a div for a horizontal two-column layout with percentage widths in a
 #' Revealjs presentation slide.
+#'
+#' @details
+#' Output looks like this:
+#' ```
+#' :::: {.columns}
+#'
+#' ::: {.column width='40%'}
+#' Left column
+#' :::
+#'
+#' ::: {.column width='60%'}
+#' Right column
+#' :::
+#'
+#' ::::
+#'
+#' ```
+#'
+#' @references
+#' [The Quarto documentation website.](https://quarto.org/docs/reference/)
 #'
 #' @export
 stamp_columns <- function() {
@@ -129,7 +246,7 @@ stamp_columns <- function() {
       "Right column\n",
       ":::\n",
       "\n",
-      "::::"
+      "::::\n"
     )
   )
 }
@@ -139,14 +256,36 @@ stamp_columns <- function() {
 #' Insert a slide divider in a Revealjs presentation (for slides without
 #' titles).
 #'
+#' @details
+#' Output looks like this:
+#' ```
+#' ---
+#'
+#' ```
+#'
+#' @references
+#' [The Quarto documentation website.](https://quarto.org/docs/reference/)
+#'
 #' @export
 stamp_divider  <- function() {
-  rstudioapi::insertText("---")
+  rstudioapi::insertText("---\n")
 }
 
 #' Insert Custom Footer
 #'
 #' Insert a custom footer div in a Revealjs presentation slide.
+#'
+#' @details
+#' Output looks like this:
+#' ```
+#' ::: footer
+#' Custom footer text
+#' :::
+#'
+#' ```
+#'
+#' @references
+#' [The Quarto documentation website.](https://quarto.org/docs/reference/)
 #'
 #' @export
 stamp_footer  <- function() {
@@ -154,14 +293,23 @@ stamp_footer  <- function() {
     paste0(
       "::: footer\n",
       "Custom footer text\n",
-      ":::"
+      ":::\n"
     )
   )
 }
 
 #' Insert Footnote
 #'
-#' Insert a footnote marker in a Revealjs presentation slide.
+#' Insert a footnote marker.
+#'
+#' @details
+#' Output looks like this:
+#' ```
+#' ^[A footnote]
+#' ```
+#'
+#' @references
+#' [The Quarto documentation website.](https://quarto.org/docs/reference/)
 #'
 #' @export
 stamp_footnote  <- function() {
@@ -173,14 +321,27 @@ stamp_footnote  <- function() {
 #' Insert a list-containing div in a Revealjs presentation slide that is
 #' revealed incrementally.
 #'
+#' @details
+#' Output looks like this:
+#' ```
+#' ::: {.incremental}
+#' - List element A
+#' - List element B
+#' :::
+#'
+#' ```
+#'
+#' @references
+#' [The Quarto documentation website.](https://quarto.org/docs/reference/)
+#'
 #' @export
 stamp_incremental <- function() {
   rstudioapi::insertText(
     paste0(
       "::: {.incremental}\n",
-      "- Eat spaghetti\n",
-      "- Drink wine\n",
-      ":::"
+      "- List element A\n",
+      "- List element B\n",
+      ":::\n"
     )
   )
 }
@@ -190,13 +351,26 @@ stamp_incremental <- function() {
 #' Insert a list-containing div to a Revealjs presentation slide that is not
 #' revealed incrementally  (overrides a global incremental reveal).
 #'
+#' @details
+#' Output looks like this:
+#' ```
+#' ::: {.nonincremental}
+#' - List element A
+#' - List element B
+#' :::
+#'
+#' ```
+#'
+#' @references
+#' [The Quarto documentation website.](https://quarto.org/docs/reference/)
+#'
 #' @export
 stamp_nonincremental <- function() {
   rstudioapi::insertText(
     paste0(
       "::: {.nonincremental}\n",
-      "- Eat spaghetti\n",
-      "- Drink wine\n",
+      "- List element A\n",
+      "- List element B\n",
       ":::"
     )
   )
@@ -206,30 +380,61 @@ stamp_nonincremental <- function() {
 #'
 #' Insert a pause marker into a Revealjs presentation slide.
 #'
+#' @details
+#' Output looks like this:
+#' ```
+#' . . .
+#'
+#' ```
+#'
+#' @references
+#' [The Quarto documentation website.](https://quarto.org/docs/reference/)
+#'
 #' @export
 stamp_pause <- function() {
-  rstudioapi::insertText(". . .")
+  rstudioapi::insertText(". . .\n")
 }
 
 #' Insert Speaker Notes
 #'
 #' Insert a speaker notes div in a Revealjs presentation slide.
 #'
+#' @details
+#' Output looks like this:
+#' ```
+#' ::: {.notes}
+#' Speaker notes (press 's' when presenting to switch to speaker mode).
+#' :::
+#'
+#' ```
+#'
+#' @references
+#' [The Quarto documentation website.](https://quarto.org/docs/reference/)
+#'
 #' @export
 stamp_notes <- function() {
   rstudioapi::insertText(
     paste0(
       "::: {.notes}\n",
-      "Speaker notes go here.\n",
-      ":::"
+      "Speaker notes (press 's' when presenting to switch to speaker mode).\n",
+      ":::\n"
     )
   )
 }
 
 #' Insert Smaller Font
 #'
-#' Insert a class that makes the font smaller in a Revealjs presentation slide.
+#' Insert a class that makes the font smaller in a Revealjs presentation slide
 #' (place on the same line as the slide title).
+#'
+#' @details
+#' Output looks like this:
+#' ```
+#' {.smaller}
+#' ```
+#'
+#' @references
+#' [The Quarto documentation website.](https://quarto.org/docs/reference/)
 #'
 #' @export
 stamp_smaller <- function() {
@@ -239,7 +444,16 @@ stamp_smaller <- function() {
 #' Insert Scrollable Content
 #'
 #' Insert a class that allows content to be scrolled if the slide is too small
-#' to hold it.
+#' to hold it (place on the same line as the slide title).
+#'
+#' @details
+#' Output looks like this:
+#' ```
+#' {.scrollable}
+#' ```
+#'
+#' @references
+#' [The Quarto documentation website.](https://quarto.org/docs/reference/)
 #'
 #' @export
 stamp_scrollable <- function() {
@@ -250,6 +464,26 @@ stamp_scrollable <- function() {
 #'
 #' Insert a panel tabset div to a Revealjs presentation slide.
 #'
+#' @details
+#' Output looks like this:
+#' ```
+#' ::: {.panel-tabset}
+#'
+#' ### Tab A
+#'
+#' Content for Tab A
+#'
+#' ### Tab B
+#'
+#' Content for Tab B
+#'
+#' :::
+#'
+#' ```
+#'
+#' @references
+#' [The Quarto documentation website.](https://quarto.org/docs/reference/)
+#'
 #' @export
 stamp_tabset <- function() {
   rstudioapi::insertText(
@@ -258,13 +492,13 @@ stamp_tabset <- function() {
       "\n",
       "### Tab A\n",
       "\n",
-      "Content for `Tab A`\n",
+      "Content for Tab A\n",
       "\n",
       "### Tab B\n",
       "\n",
-      "Content for `Tab B`\n",
+      "Content for Tab B\n",
       "\n",
-      ":::"
+      ":::\n"
     )
   )
 }

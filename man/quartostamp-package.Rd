@@ -6,7 +6,7 @@
 \alias{quartostamp-package}
 \title{quartostamp: RStudio Addin to Insert Quarto Helpers}
 \description{
-An RStudio Addin to help you insert ('stamp') useful little code blocks into your Quarto document.
+An RStudio Addin to insert ('stamp') pre-written classes and divs into your Quarto documents.
 }
 \author{
 \strong{Maintainer}: Matt Dray \email{mwdray@gmail.com}

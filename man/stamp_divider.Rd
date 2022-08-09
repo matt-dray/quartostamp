@@ -10,3 +10,11 @@ stamp_divider()
 Insert a slide divider in a Revealjs presentation (for slides without
 titles).
 }
+\details{
+Output looks like this:\preformatted{---
+
+}
+}
+\references{
+\href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
+}

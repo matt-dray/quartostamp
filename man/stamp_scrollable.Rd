@@ -8,5 +8,12 @@ stamp_scrollable()
 }
 \description{
 Insert a class that allows content to be scrolled if the slide is too small
-to hold it.
+to hold it (place on the same line as the slide title).
+}
+\details{
+Output looks like this:\preformatted{\{.scrollable\}
+}
+}
+\references{
+\href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
 }

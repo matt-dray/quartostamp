@@ -10,3 +10,14 @@ stamp_nonincremental()
 Insert a list-containing div to a Revealjs presentation slide that is not
 revealed incrementally  (overrides a global incremental reveal).
 }
+\details{
+Output looks like this:\preformatted{::: \{.nonincremental\}
+- List element A
+- List element B
+:::
+
+}
+}
+\references{
+\href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
+}

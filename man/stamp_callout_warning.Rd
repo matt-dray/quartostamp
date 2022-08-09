@@ -7,5 +7,20 @@
 stamp_callout_warning()
 }
 \description{
-Insert a callout block of type 'warning'.
+Insert a callout-block div of type 'warning', which has a yellow accent and
+a warning-triangle icon.
+}
+\details{
+Output looks like this:\preformatted{:::\{.callout-warning collapse=false appearance='default' icon=true\}
+## Optional caption (warning)
+- Hide callout body with 'collapse=true'
+- Remove 'collapse' to prevent expandability
+- Set appearance to 'default', 'simple' or 'minimal'
+- Remove icon with 'icon=false'
+:::
+
+}
+}
+\references{
+\href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
 }

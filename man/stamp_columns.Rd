@@ -10,3 +10,21 @@ stamp_columns()
 Insert a div for a horizontal two-column layout with percentage widths in a
 Revealjs presentation slide.
 }
+\details{
+Output looks like this:\preformatted{:::: \{.columns\}
+
+::: \{.column width='40\%'\}
+Left column
+:::
+
+::: \{.column width='60\%'\}
+Right column
+:::
+
+::::
+
+}
+}
+\references{
+\href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
+}

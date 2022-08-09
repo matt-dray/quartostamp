@@ -1,3 +1,26 @@
 url: ~
 template:
   bootstrap: 5
+
+reference:
+- title: "Classes"
+  desc: "Classes that impact the content of a Quarto slide if placed on the same row as the slide title. These are surrounded by curly braces (i.e. `{}`)."
+  contents:
+  - contains("smaller")
+  - contains("scrollable")
+- title: "Divs"
+  desc: "Div blocks that style the content you put inside them. These are fenced by multiple colons (e.g. `:::`)."
+  contents:
+  - contains("aside")
+  - contains("callout")
+  - contains("columns")
+  - contains("footer")
+  - contains("incremental")
+  - contains("notes")
+  - contains("tabset")
+- title: "Other"
+  desc: "Other miscellaneous elements."
+  contents:
+  - contains("divider")
+  - contains("footnote")
+  - contains("pause")

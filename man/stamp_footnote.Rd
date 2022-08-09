@@ -7,5 +7,12 @@
 stamp_footnote()
 }
 \description{
-Insert a footnote marker in a Revealjs presentation slide.
+Insert a footnote marker.
+}
+\details{
+Output looks like this:\preformatted{^[A footnote]
+}
+}
+\references{
+\href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
 }

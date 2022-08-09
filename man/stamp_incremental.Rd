@@ -10,3 +10,14 @@ stamp_incremental()
 Insert a list-containing div in a Revealjs presentation slide that is
 revealed incrementally.
 }
+\details{
+Output looks like this:\preformatted{::: \{.incremental\}
+- List element A
+- List element B
+:::
+
+}
+}
+\references{
+\href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
+}
