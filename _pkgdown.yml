@@ -1,6 +1,9 @@
-url: ~
+url: https://github.com/matt-dray/quartostamp/
+
 template:
   bootstrap: 5
+    bslib:
+      primary: "#729fd5"
 
 reference:
 - title: "Classes"

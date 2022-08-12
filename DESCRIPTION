@@ -4,6 +4,8 @@ Version: 0.0.0.9001
 Authors@R: person("Matt", "Dray", , "mwdray@gmail.com", role = c("aut", "cre"))
 Description: An RStudio Addin to insert ('stamp') pre-written classes and divs
     into your Quarto documents.
+  URL: https://matt-dray.github.io/quartostamp/, https://github.com/matt-dray/quartostamp
+BugReports: https://github.com/matt-dray/quartostamp/issues
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
