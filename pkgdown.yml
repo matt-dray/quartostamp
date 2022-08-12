@@ -2,5 +2,8 @@ pandoc: 2.7.3
 pkgdown: 2.0.6
 pkgdown_sha: ~
 articles: {}
-last_built: 2022-08-09T11:50Z
+last_built: 2022-08-12T18:40Z
+urls:
+  reference: https://github.com/matt-dray/quartostamp/reference
+  article: https://github.com/matt-dray/quartostamp/articles
 
