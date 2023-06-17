@@ -23,9 +23,9 @@ remotes::install_github("matt-dray/quartostamp")
 
 To use: 
 
-1. Put the cursor in your Quarto file where you'd like to insert an element
-2. Click the 'RStudio Addins' dropdown at the top of the RStudio IDE
-3. Scroll/search for 'QUARTOSTAMP' and click the function you want
+1. Put the cursor in your Quarto file where you'd like to insert an element. Alternatively, highlight some text that you would like to use in the body of an element.
+2. Click the 'RStudio Addins' dropdown at the top of the RStudio IDE.
+3. Scroll/search for 'QUARTOSTAMP' and click the function you want.
 
 Use the help files to learn more about each function. They all start with `stamp_` so you can search like `?stamp_notes`.
 

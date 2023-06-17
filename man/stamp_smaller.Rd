@@ -6,6 +6,9 @@
 \usage{
 stamp_smaller()
 }
+\value{
+Nothing. Text is updated in the active document.
+}
 \description{
 Insert a class that makes the font smaller in a Revealjs presentation slide
 (place on the same line as the slide title).

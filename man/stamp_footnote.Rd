@@ -4,14 +4,30 @@
 \alias{stamp_footnote}
 \title{Insert Footnote}
 \usage{
-stamp_footnote()
+stamp_footnote(trim_n = 10L, clip = TRUE)
+}
+\arguments{
+\item{trim_n}{Integer. The number of characters that the selected text should
+be truncated to when used as the footnote marker text.}
+
+\item{clip}{Logical. Should the footnote string be added to the clipboard so
+the user can paste it at the bottom of the document? Defaiults to \code{TRUE}.}
+}
+\value{
+Nothing. Text is updated in the active document and footnote is added
+to the clipboard.
 }
 \description{
-Insert a footnote marker.
+Insert a footnote marker with skeleton text. If the user selects some text,
+a modified version of it will be used to fill the footnote marker text
+instead (spaces and punctuation will be removed and the string will be
+trimmed to \code{trim_n}, which defaults to 10).
 }
 \details{
-Output looks like this:\preformatted{^[A footnote]
+The output looks like this if the user hadn't selected any text:\preformatted{Here is some text you wrote [^footnote].
 }
+
+And the console will state \verb{Footnote '[^footnote]: Insert description.' added to clipboard. Paste it at the bottom of your document.}
 }
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}

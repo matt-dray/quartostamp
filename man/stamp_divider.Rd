@@ -6,12 +6,15 @@
 \usage{
 stamp_divider()
 }
+\value{
+Nothing. Text is updated in the active document.
+}
 \description{
 Insert a slide divider in a Revealjs presentation (for slides without
 titles).
 }
 \details{
-Output looks like this:\preformatted{---
+The output looks like this:\preformatted{---
 
 }
 }

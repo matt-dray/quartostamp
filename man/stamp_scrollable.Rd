@@ -6,6 +6,9 @@
 \usage{
 stamp_scrollable()
 }
+\value{
+Nothing. Text is updated in the active document.
+}
 \description{
 Insert a class that allows content to be scrolled if the slide is too small
 to hold it (place on the same line as the slide title).

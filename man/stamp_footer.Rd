@@ -6,11 +6,15 @@
 \usage{
 stamp_footer()
 }
+\value{
+Nothing. Text is updated in the active document.
+}
 \description{
-Insert a custom footer div in a Revealjs presentation slide.
+Insert a custom footer div in a Revealjs presentation slide. Will include
+text selected by the user, otherwise skeleton help text will be inserted.
 }
 \details{
-Output looks like this:\preformatted{::: footer
+The output looks like this if the user hadn't selected any text:\preformatted{::: footer
 Custom footer text
 :::
 
