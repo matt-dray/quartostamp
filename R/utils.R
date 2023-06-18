@@ -25,7 +25,7 @@
 
     .replace_text(
       pre = paste0(
-        ":::{.callout-", type, "collapse=false appearance='default' icon=true}\n",
+        ":::{.callout-", type, " collapse=false appearance='default' icon=true}\n",
         "## Optional caption (", type, ")\n"
       ),
       body = paste0(

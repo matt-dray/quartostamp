@@ -8,13 +8,15 @@
 
 An R package containing an [RStudio Addin](https://rstudio.github.io/rstudioaddins/) to insert pre-written divs and classes into your [Quarto](https://quarto.org/) documents.
 
-See the [package website](https://matt-dray.github.io/quartostamp/) for the [full list of available functions](https://matt-dray.github.io/quartostamp/reference/index.html) and the [Quarto website](https://quarto.org/docs/guide/) for full documentation
-
 Why 'quartostamp'? You could physically stamp some pre-prepared type into a [literal quarto document](https://en.wikipedia.org/wiki/Quarto); you can digitally stamp some pre-written elements into your qmd file.
+
+See the [package website](https://matt-dray.github.io/quartostamp/) for the [full list of available functions](https://matt-dray.github.io/quartostamp/reference/index.html) and the [Quarto website](https://quarto.org/docs/guide/) for full Quarto documentation.
+
+Please [add requests as GitHub issues](https://github.com/matt-dray/quartostamp/issues), or raise a pull request.
 
 ## Install and use
 
-To install this package from GitHub, run the following and then restart RStudio:
+To install this package [from GitHub](https://github.com/matt-dray/quartostamp/), run the following and then restart RStudio:
 
 ``` r
 install.packages("remotes")  # if not yet installed
