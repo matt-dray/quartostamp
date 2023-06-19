@@ -15,7 +15,9 @@ a lightbulb icon. Will embed text selected by the user, otherwise skeleton
 help text will be inserted.
 }
 \details{
-The output looks like this if the user hadn't selected any text:\preformatted{:::\{.callout-tip collapse=false appearance='default' icon=true\}
+The output looks like this if the user hadn't selected any text:
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{:::\{.callout-tip collapse=false appearance='default' icon=true\}
 ## Optional caption (tip)
 - Hide callout body with 'collapse=true'
 - Remove 'collapse' to prevent expandability
@@ -23,7 +25,7 @@ The output looks like this if the user hadn't selected any text:\preformatted{::
 - Remove icon with 'icon=false'
 :::
 
-}
+}\if{html}{\out{</div>}}
 }
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}

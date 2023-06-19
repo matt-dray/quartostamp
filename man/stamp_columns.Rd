@@ -16,7 +16,9 @@ left column and helper text into the right, otherwise skeleton help text will
 be inserted into both columns.
 }
 \details{
-The output looks like this if the user hadn't selected any text:\preformatted{:::: \{.columns\}
+The output looks like this if the user hadn't selected any text:
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{:::: \{.columns\}
 
 ::: \{.column width='40\%'\}
 Left column
@@ -28,7 +30,7 @@ Right column
 
 ::::
 
-}
+}\if{html}{\out{</div>}}
 }
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}

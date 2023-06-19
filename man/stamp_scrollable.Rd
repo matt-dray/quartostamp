@@ -14,8 +14,10 @@ Insert a class that allows content to be scrolled if the slide is too small
 to hold it (place on the same line as the slide title).
 }
 \details{
-Output looks like this:\preformatted{\{.scrollable\}
-}
+Output looks like this:
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{\{.scrollable\}
+}\if{html}{\out{</div>}}
 }
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}

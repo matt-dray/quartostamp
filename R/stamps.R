@@ -274,32 +274,55 @@ stamp_footer <- function() {
 
 #' Insert Footnote
 #'
-#' Insert a footnote marker with skeleton text. If the user selects some text,
-#' a modified version of it will be used to fill the footnote marker text
-#' instead (spaces and punctuation will be removed and the string will be
-#' trimmed to `trim_n`, which defaults to 10).
+#' Insert a footnote marker with skeleton text. If the user selects some text
+#' before using this function, a modified version of it will be used to fill the
+#' footnote label text instead (punctuation will be removed, spaces will be
+#' replaced by hyphens and the text will be made lowercase).
 #'
-#' @param trim_n Integer. The number of characters that the selected text should
-#'     be truncated to when used as the footnote marker text.
 #' @param clip Logical. Should the footnote string be added to the clipboard so
-#'     the user can paste it at the bottom of the document? Defaiults to `TRUE`.
+#'     the user can paste it at the bottom of the document? Defaults to `TRUE`.
 #'
 #' @details
-#' The output looks like this if the user hadn't selected any text:
+#' The output looks like this if the user hadn't selected any text and just
+#' wants to insert a footnote skeleton:
 #' ```
 #' Here is some text you wrote [^footnote].
 #' ```
-#' And the console will state `Footnote '[^footnote]: Insert description.' added
-#' to clipboard. Paste it at the bottom of your document.`
+#' And the console will print:
+#' ```
+#' ℹ Copy the footnote '[^footnote]: Insert description'.
+#' ℹ Paste it at the bottom of your document and adjust the description.
+#' ℹ Ensure your footnote labels are unique.
+#' ````
+#' The output looks like this if the user selected some text before using the
+#' function:
+#' ```
+#' Here is some text[^some-text] you wrote.
+#' ```
+#' And the console will print:
+#' ```
+#' ℹ The footnote '[^some-text]: Insert description.' was added to the clipboard.
+#' ℹ Paste it at the bottom of your document and adjust the description.
+#' ℹ Ensure your footnote labels are unique.
+#' ````
 #'
 #' @references
 #' [The Quarto documentation website.](https://quarto.org/docs/reference/)
 #'
 #' @return Nothing. Text is updated in the active document and footnote is added
-#'     to the clipboard.
+#'     to the clipboard if `clip = TRUE`.
 #'
 #' @export
-stamp_footnote <- function(trim_n = 10L, clip = TRUE) {
+stamp_footnote <- function(clip = TRUE) {
+
+  if (!inherits(clip, "logical")) {
+    cli::cli_abort(
+      c(
+        "The argument 'clip' must be logical.",
+        "i" = "Set 'clip' to TRUE or FALSE."
+      )
+    )
+  }
 
   active_doc <- rstudioapi::getActiveDocumentContext()
 
@@ -307,30 +330,34 @@ stamp_footnote <- function(trim_n = 10L, clip = TRUE) {
 
     selected_text <- active_doc$selection[[1]]$text
     has_selected_text <- nchar(selected_text) > 0
-    selected_squashed <-
-      strtrim(gsub("[[:space:]]|[[:punct:]]", "", selected_text), trim_n)
-
-    if (has_selected_text) {
-      inline_replace <- paste0(selected_text, " [^", selected_squashed, "]")
-      foot_insert <- paste0("[^", selected_squashed, "]: Insert description.")
-    }
 
     if (!has_selected_text) {
-      inline_replace <- paste0(selected_text, " [^footnote]")
+      inline_replace <- "[^footnote]"
       foot_insert <- paste0("[^footnote]: Insert description.")
+    }
+
+    if (has_selected_text) {
+      selected_depunct <- gsub("[[:punct:]]", "", selected_text)
+      footnote_label <- gsub("[[:space:]]", "-", tolower(selected_depunct))
+      inline_replace <- paste0(selected_text, "[^", footnote_label, "]")
+      foot_insert <- paste0("[^", footnote_label, "]: Insert description.")
     }
 
     rstudioapi::modifyRange(active_doc$selection[[1]]$range, inline_replace)
 
     if (clip) {
       clipr::write_clip(foot_insert)
-      message(
-        paste0(
-          "The footnote '", foot_insert,
-          "' was added to the clipboard. Paste it at the bottom of your document."
-        )
+      cli::cli_alert_info(
+        paste0("The footnote '", foot_insert, "' was added to the clipboard.")
       )
     }
+
+    if (!clip) {
+      cli::cli_alert_info(paste0("Copy the footnote '", foot_insert, "'."))
+    }
+
+    cli::cli_alert_info("Paste it at the bottom of your document and adjust the description.")
+    cli::cli_alert_info("Ensure your footnote labels are unique.")
 
     # You can't insert into a new row at the bottom of the document without
     # first adding a row and saving over the user's document, which doesn't

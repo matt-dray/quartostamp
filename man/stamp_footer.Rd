@@ -14,11 +14,13 @@ Insert a custom footer div in a Revealjs presentation slide. Will include
 text selected by the user, otherwise skeleton help text will be inserted.
 }
 \details{
-The output looks like this if the user hadn't selected any text:\preformatted{::: footer
+The output looks like this if the user hadn't selected any text:
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{::: footer
 Custom footer text
 :::
 
-}
+}\if{html}{\out{</div>}}
 }
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}

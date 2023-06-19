@@ -34,9 +34,9 @@ Use the help files to learn more about each function. They all start with `stamp
 You can also create [custom RStudio keyboard shortcuts](https://support.rstudio.com/hc/en-us/articles/206382178-Customizing-Keyboard-Shortcuts-in-the-RStudio-IDE) for these functions:
 
 1. Go to 'Tools' then 'Modify Keyboard Shortcuts...'
-3. Search for the {quartostamp} function that you want a shortcut for
-4. Click in the 'Shortcut' column and type the key combination you want to use
-5. Click 'Apply'
+3. Search for the {quartostamp} function that you want a shortcut for.
+4. Click in the 'Shortcut' column and type the key combination you want to use.
+5. Click 'Apply'.
 
 ## Related
 

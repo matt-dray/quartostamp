@@ -13,9 +13,11 @@ Nothing. Text is updated in the active document.
 Insert a pause marker into a Revealjs presentation slide.
 }
 \details{
-The output looks like this:\preformatted{. . .
+The output looks like this:
 
-}
+\if{html}{\out{<div class="sourceCode">}}\preformatted{. . .
+
+}\if{html}{\out{</div>}}
 }
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}

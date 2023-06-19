@@ -15,11 +15,13 @@ embed text selected by the user, otherwise skeleton help text will be
 inserted.
 }
 \details{
-The output looks like this if the user hadn't selected any text:\preformatted{::: aside
+The output looks like this if the user hadn't selected any text:
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{::: aside
 Additional commentary.
 :::
 
-}
+}\if{html}{\out{</div>}}
 }
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}

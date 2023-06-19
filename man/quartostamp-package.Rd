@@ -6,7 +6,7 @@
 \alias{quartostamp-package}
 \title{quartostamp: RStudio Addin to Insert Quarto Helpers}
 \description{
-\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
 An RStudio Addin to insert ('stamp') pre-written classes and divs into your Quarto documents.
 }

@@ -14,11 +14,13 @@ Insert a speaker notes div in a Revealjs presentation slide. Will embed
 text selected by the user, otherwise skeleton help text will be inserted.
 }
 \details{
-The output looks like this if the user hadn't selected any text:\preformatted{::: \{.notes\}
+The output looks like this if the user hadn't selected any text:
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{::: \{.notes\}
 Speaker notes (press 's' when presenting to switch to speaker mode).
 :::
 
-}
+}\if{html}{\out{</div>}}
 }
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
