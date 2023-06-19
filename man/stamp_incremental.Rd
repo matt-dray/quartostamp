@@ -6,17 +6,23 @@
 \usage{
 stamp_incremental()
 }
+\value{
+Nothing. Text is updated in the active document.
+}
 \description{
 Insert a list-containing div in a Revealjs presentation slide that is
-revealed incrementally.
+revealed incrementally. Will embed text selected by the user, otherwise
+skeleton help text will be inserted.
 }
 \details{
-Output looks like this:\preformatted{::: \{.incremental\}
+The output looks like this if the user hadn't selected any text:
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{::: \{.incremental\}
 - List element A
 - List element B
 :::
 
-}
+}\if{html}{\out{</div>}}
 }
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}

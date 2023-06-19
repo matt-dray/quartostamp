@@ -6,17 +6,23 @@
 \usage{
 stamp_nonincremental()
 }
+\value{
+Nothing. Text is updated in the active document.
+}
 \description{
 Insert a list-containing div to a Revealjs presentation slide that is not
-revealed incrementally  (overrides a global incremental reveal).
+revealed incrementally  (overrides a global incremental reveal). Will embed
+text selected by the user, otherwise skeleton help text will be inserted.
 }
 \details{
-Output looks like this:\preformatted{::: \{.nonincremental\}
+The output looks like this if the user hadn't selected any text:
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{::: \{.nonincremental\}
 - List element A
 - List element B
 :::
 
-}
+}\if{html}{\out{</div>}}
 }
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}

@@ -6,12 +6,18 @@
 \usage{
 stamp_callout_important()
 }
+\value{
+Nothing. Text is updated in the active document.
+}
 \description{
 Insert a callout-block div of type 'important', which has a red accent and
-an exclamation-point icon.
+an exclamation-point icon. Will embed text selected by the user, otherwise
+skeleton help text will be inserted.
 }
 \details{
-Output looks like this:\preformatted{:::\{.callout-important collapse=false appearance='default' icon=true\}
+The output looks like this if the user hadn't selected any text:
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{:::\{.callout-important collapse=false appearance='default' icon=true\}
 ## Optional caption (important)
 - Hide callout body with 'collapse=true'
 - Remove 'collapse' to prevent expandability
@@ -19,7 +25,7 @@ Output looks like this:\preformatted{:::\{.callout-important collapse=false appe
 - Remove icon with 'icon=false'
 :::
 
-}
+}\if{html}{\out{</div>}}
 }
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}

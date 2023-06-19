@@ -6,15 +6,22 @@
 \usage{
 stamp_aside()
 }
+\value{
+Nothing. Text is updated in the active document.
+}
 \description{
-Insert a div that creates an 'aside' in a Revealjs presentation slide.
+Insert a div that creates an 'aside' in a Revealjs presentation slide. Will
+embed text selected by the user, otherwise skeleton help text will be
+inserted.
 }
 \details{
-Output looks like this:\preformatted{::: aside
+The output looks like this if the user hadn't selected any text:
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{::: aside
 Additional commentary.
 :::
 
-}
+}\if{html}{\out{</div>}}
 }
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}

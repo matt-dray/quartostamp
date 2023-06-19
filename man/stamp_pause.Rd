@@ -6,13 +6,18 @@
 \usage{
 stamp_pause()
 }
+\value{
+Nothing. Text is updated in the active document.
+}
 \description{
 Insert a pause marker into a Revealjs presentation slide.
 }
 \details{
-Output looks like this:\preformatted{. . .
+The output looks like this:
 
-}
+\if{html}{\out{<div class="sourceCode">}}\preformatted{. . .
+
+}\if{html}{\out{</div>}}
 }
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}

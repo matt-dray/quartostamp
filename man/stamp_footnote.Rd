@@ -4,14 +4,48 @@
 \alias{stamp_footnote}
 \title{Insert Footnote}
 \usage{
-stamp_footnote()
+stamp_footnote(clip = TRUE)
+}
+\arguments{
+\item{clip}{Logical. Should the footnote string be added to the clipboard so
+the user can paste it at the bottom of the document? Defaults to \code{TRUE}.}
+}
+\value{
+Nothing. Text is updated in the active document and footnote is added
+to the clipboard if \code{clip = TRUE}.
 }
 \description{
-Insert a footnote marker.
+Insert a footnote marker with skeleton text. If the user selects some text
+before using this function, a modified version of it will be used to fill the
+footnote label text instead (punctuation will be removed, spaces will be
+replaced by hyphens and the text will be made lowercase).
 }
 \details{
-Output looks like this:\preformatted{^[A footnote]
-}
+The output looks like this if the user hadn't selected any text and just
+wants to insert a footnote skeleton:
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{Here is some text you wrote [^footnote].
+}\if{html}{\out{</div>}}
+
+And the console will print:
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{ℹ Copy the footnote '[^footnote]: Insert description'.
+ℹ Paste it at the bottom of your document and adjust the description.
+ℹ Ensure your footnote labels are unique.
+}\if{html}{\out{</div>}}
+
+The output looks like this if the user selected some text before using the
+function:
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{Here is some text[^some-text] you wrote.
+}\if{html}{\out{</div>}}
+
+And the console will print:
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{ℹ The footnote '[^some-text]: Insert description.' was added to the clipboard.
+ℹ Paste it at the bottom of your document and adjust the description.
+ℹ Ensure your footnote labels are unique.
+}\if{html}{\out{</div>}}
 }
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}

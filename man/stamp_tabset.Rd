@@ -6,11 +6,18 @@
 \usage{
 stamp_tabset()
 }
+\value{
+Nothing. Text is updated in the active document.
+}
 \description{
-Insert a panel tabset div to a Revealjs presentation slide.
+Insert a panel tabset div to a Revealjs presentation slide. Will embed text
+selected by the user into the first tab and skeleton help text into the
+second, otherwise skeleton help text will be inserted into both tabs.
 }
 \details{
-Output looks like this:\preformatted{::: \{.panel-tabset\}
+The output looks like this if the user hadn't selected any text:
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{::: \{.panel-tabset\}
 
 ### Tab A
 
@@ -22,7 +29,7 @@ Content for Tab B
 
 :::
 
-}
+}\if{html}{\out{</div>}}
 }
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}

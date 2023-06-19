@@ -6,12 +6,18 @@
 \usage{
 stamp_callout_warning()
 }
+\value{
+Nothing. Text is updated in the active document.
+}
 \description{
 Insert a callout-block div of type 'warning', which has a yellow accent and
-a warning-triangle icon.
+a warning-triangle icon. Will embed text selected by the user, otherwise
+skeleton help text will be inserted.
 }
 \details{
-Output looks like this:\preformatted{:::\{.callout-warning collapse=false appearance='default' icon=true\}
+The output looks like this if the user hadn't selected any text:
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{:::\{.callout-warning collapse=false appearance='default' icon=true\}
 ## Optional caption (warning)
 - Hide callout body with 'collapse=true'
 - Remove 'collapse' to prevent expandability
@@ -19,7 +25,7 @@ Output looks like this:\preformatted{:::\{.callout-warning collapse=false appear
 - Remove icon with 'icon=false'
 :::
 
-}
+}\if{html}{\out{</div>}}
 }
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
