@@ -557,17 +557,28 @@ stamp_scrollable <- function() {
 #'
 #' @export
 stamp_tabset <- function() {
+
+  is_revealjs <- .check_revealjs()
+
+  if (is_revealjs) {
+    heading_level <- 3
+  } else {
+    heading_level <- 2
+  }
+
+  tabset_heading_md <- paste(rep("#", heading_level), collapse = "")
+
   .replace_text(
     pre = paste0(
       "::: {.panel-tabset}\n",
       "\n",
-      "### Tab A\n",
+      paste(tabset_heading_md, "Tab A\n"),
       "\n"
     ),
     body = "Content for Tab A\n",
     post = paste0(
       "\n",
-      "### Tab B\n",
+      paste(tabset_heading_md, "Tab B\n"),
       "\n",
       "Content for Tab B\n",
       "\n",

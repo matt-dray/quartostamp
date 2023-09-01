@@ -38,3 +38,25 @@
     )
 
 }
+
+.check_revealjs <- function() {
+
+  active_doc <- rstudioapi::getActiveDocumentContext()
+  contents <- active_doc[["contents"]]
+
+  yaml_end_index <- which(contents == "---")[2]
+  yaml_only <- contents[seq(yaml_end_index)]
+
+  yaml_parsed <- yaml::yaml.load(yaml_only)
+
+  has_format <- "format" %in% names(yaml_parsed)
+
+  if (has_format) {
+    is_revealjs <- "revealjs" %in% names(yaml_parsed[["format"]])
+  } else {
+    is_revealjs <- FALSE
+  }
+
+  return(is_revealjs)
+
+}
