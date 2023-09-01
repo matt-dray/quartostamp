@@ -19,11 +19,11 @@ The output looks like this if the user hadn't selected any text:
 
 \if{html}{\out{<div class="sourceCode">}}\preformatted{::: \{.panel-tabset\}
 
-### Tab A
+## Tab A
 
 Content for Tab A
 
-### Tab B
+## Tab B
 
 Content for Tab B
 

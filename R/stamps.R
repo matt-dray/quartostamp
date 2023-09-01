@@ -538,11 +538,11 @@ stamp_scrollable <- function() {
 #' ```
 #' ::: {.panel-tabset}
 #'
-#' ### Tab A
+#' ## Tab A
 #'
 #' Content for Tab A
 #'
-#' ### Tab B
+#' ## Tab B
 #'
 #' Content for Tab B
 #'
@@ -561,13 +561,13 @@ stamp_tabset <- function() {
     pre = paste0(
       "::: {.panel-tabset}\n",
       "\n",
-      "### Tab A\n",
+      "## Tab A\n",
       "\n"
     ),
     body = "Content for Tab A\n",
     post = paste0(
       "\n",
-      "### Tab B\n",
+      "## Tab B\n",
       "\n",
       "Content for Tab B\n",
       "\n",
