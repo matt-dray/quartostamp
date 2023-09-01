@@ -529,12 +529,36 @@ stamp_scrollable <- function() {
 
 #' Insert Tabset
 #'
-#' Insert a panel tabset div to a Revealjs presentation slide. Will embed text
-#' selected by the user into the first tab and skeleton help text into the
-#' second, otherwise skeleton help text will be inserted into both tabs.
+#' Insert a panel tabset div. Will embed text selected by the user into the
+#' first tab and skeleton help text into the second, otherwise skeleton help
+#' text will be inserted into both tabs. The header level will depend on the
+#' current document format. Tabs default to header level 2, but will be header
+#' level 3 if the format in the YAML header is specified as 'revealjs'. This is
+#' because a level 2 header demarcates slide boundaries in a reveal.js
+#' presentation written with Quarto.
 #'
 #' @details
-#' The output looks like this if the user hadn't selected any text:
+#' The output looks like this if the user hadn't selected any text and the
+#' document format is not 'revealjs' according to the YAML header:
+#'
+#' ```
+#' ::: {.panel-tabset}
+#'
+#' ## Tab A
+#'
+#' Content for Tab A
+#'
+#' ## Tab B
+#'
+#' Content for Tab B
+#'
+#' :::
+#'
+#' ```
+#'
+#' And if the document has format 'revealjs' in the YAML header:
+#'
+#'
 #' ```
 #' ::: {.panel-tabset}
 #'
@@ -548,7 +572,6 @@ stamp_scrollable <- function() {
 #'
 #' :::
 #'
-#' ```
 #'
 #' @references
 #' [The Quarto documentation website.](https://quarto.org/docs/reference/)

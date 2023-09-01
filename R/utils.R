@@ -42,6 +42,7 @@
 .check_revealjs <- function() {
 
   active_doc <- rstudioapi::getActiveDocumentContext()
+
   contents <- active_doc[["contents"]]
 
   yaml_end_index <- which(contents == "---")[2]
