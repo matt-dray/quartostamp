@@ -560,10 +560,10 @@ stamp_tabset <- function() {
 
   is_revealjs <- .check_revealjs()
 
+  heading_level <- 2
+
   if (is_revealjs) {
     heading_level <- 3
-  } else {
-    heading_level <- 2
   }
 
   tabset_heading_md <- paste(rep("#", heading_level), collapse = "")

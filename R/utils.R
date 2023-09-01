@@ -51,10 +51,23 @@
 
   has_format <- "format" %in% names(yaml_parsed)
 
+  is_revealjs <- FALSE
+
   if (has_format) {
-    is_revealjs <- "revealjs" %in% names(yaml_parsed[["format"]])
-  } else {
-    is_revealjs <- FALSE
+
+    formats <- yaml_parsed[["format"]]
+
+    formats_is_vec <- inherits(formats, "character")
+    formats_is_list <- inherits(formats, "list")
+
+    if (formats_is_vec) {
+      is_revealjs <- "revealjs" %in% formats
+    }
+
+    if (formats_is_list) {
+      is_revealjs <- "revealjs" %in% names(formats)
+    }
+
   }
 
   return(is_revealjs)
