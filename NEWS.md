@@ -1,3 +1,8 @@
+# quartostamp 0.1.1
+
+* Replaced level 3 wih level 2 headers in tabsets (PR #12 closes #10, thank you @Lextuga007).
+* Added Zoë Turner (@Lextuga007) as contributor.
+
 # quartostamp 0.1.0
 
 * Allowed functions to include the text selected by the user (where appropriate), rather than just inserting a simple skeleton (closes #6, thank you @Lextuga007).

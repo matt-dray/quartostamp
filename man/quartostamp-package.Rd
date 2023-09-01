@@ -22,5 +22,10 @@ Useful links:
 \author{
 \strong{Maintainer}: Matt Dray \email{mwdray@gmail.com}
 
+Other contributors:
+\itemize{
+  \item Zoë Turner (\href{https://orcid.org/0000-0003-1033-9158}{ORCID}) [contributor]
+}
+
 }
 \keyword{internal}
