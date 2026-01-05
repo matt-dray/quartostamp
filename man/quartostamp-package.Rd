@@ -4,11 +4,11 @@
 \name{quartostamp-package}
 \alias{quartostamp}
 \alias{quartostamp-package}
-\title{quartostamp: RStudio Addin to Insert Quarto Helpers}
+\title{quartostamp: RStudio Addin to Insert Quarto Formatting Blocks}
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-An RStudio Addin to insert ('stamp') pre-written classes and divs into your Quarto documents.
+RStudio Addin to help write Quarto documents by inserting common formatting blocks such as columns, tabsets, callouts, incremental lists and Revealjs speaker notes. User-selected text is automatically wrapped, otherwise skeleton examples are inserted.
 }
 \seealso{
 Useful links:

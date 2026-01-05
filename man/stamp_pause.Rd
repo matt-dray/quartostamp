@@ -22,3 +22,8 @@ The output looks like this:
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
 }
+\seealso{
+Other stamp-markers: 
+\code{\link{stamp_divider}()}
+}
+\concept{stamp-markers}

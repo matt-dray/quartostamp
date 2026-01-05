@@ -10,7 +10,7 @@ stamp_callout_note()
 Nothing. Text is updated in the active document.
 }
 \description{
-Insert a callout-block div of type 'note', which has a blue accent and
+Insert a callout-block fenced div of type 'note', which has a blue accent and
 a letter 'i' icon. Will embed text selected bythe  user, otherwise
 skeleton help text will be inserted.
 }
@@ -30,3 +30,11 @@ The output looks like this if the user hadn't selected any text:
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
 }
+\seealso{
+Other stamp-callouts: 
+\code{\link{stamp_callout_caution}()},
+\code{\link{stamp_callout_important}()},
+\code{\link{stamp_callout_tip}()},
+\code{\link{stamp_callout_warning}()}
+}
+\concept{stamp-callouts}

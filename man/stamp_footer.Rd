@@ -25,3 +25,11 @@ Custom footer text
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
 }
+\seealso{
+Other stamp-blocks: 
+\code{\link{stamp_aside}()},
+\code{\link{stamp_columns}()},
+\code{\link{stamp_notes}()},
+\code{\link{stamp_tabset}()}
+}
+\concept{stamp-blocks}

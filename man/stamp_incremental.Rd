@@ -10,7 +10,7 @@ stamp_incremental()
 Nothing. Text is updated in the active document.
 }
 \description{
-Insert a list-containing div in a Revealjs presentation slide that is
+Insert a list-containing fenced div in a Revealjs presentation slide that is
 revealed incrementally. Will embed text selected by the user, otherwise
 skeleton help text will be inserted.
 }
@@ -27,3 +27,8 @@ The output looks like this if the user hadn't selected any text:
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
 }
+\seealso{
+Other stamp-lists: 
+\code{\link{stamp_nonincremental}()}
+}
+\concept{stamp-lists}
