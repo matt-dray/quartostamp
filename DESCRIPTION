@@ -13,7 +13,6 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 Imports: 
-    cli,
     clipr,
     rstudioapi
 Config/roxygen2/version: 8.0.0
