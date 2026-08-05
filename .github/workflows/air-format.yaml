@@ -5,7 +5,7 @@ on:
     branches: [main, master]
   pull_request:
 
-name: format-check.yaml
+name: air-format
 
 permissions: read-all
 

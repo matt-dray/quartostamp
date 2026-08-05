@@ -3,7 +3,9 @@
 
 <!-- badges: start -->
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![R-CMD-check](https://github.com/matt-dray/quartostamp/workflows/R-CMD-check/badge.svg)](https://github.com/matt-dray/quartostamp/actions)
+[![R-CMD-check](https://github.com/matt-dray/quartostamp/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/matt-dray/quartostamp/actions/workflows/R-CMD-check.yaml)
+[![air-format](https://github.com/matt-dray/quartostamp/actions/workflows/format.yaml/badge.svg)](https://github.com/matt-dray/quartostamp/actions/workflows/air-format.yaml)
+[![jarl-lint](https://github.com/matt-dray/quartostamp/actions/workflows/lint.yaml/badge.svg)](https://github.com/matt-dray/quartostamp/actions/workflows/jarl-lint.yaml)
 <!-- badges: end -->
 
 ## About
