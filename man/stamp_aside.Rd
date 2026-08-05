@@ -27,10 +27,10 @@ Additional commentary.
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
 }
 \seealso{
-Other stamp-blocks: 
-\code{\link{stamp_columns}()},
-\code{\link{stamp_footer}()},
-\code{\link{stamp_notes}()},
-\code{\link{stamp_tabset}()}
+Other stamp-blocks:
+\code{\link[=stamp_columns]{stamp_columns()}},
+\code{\link[=stamp_footer]{stamp_footer()}},
+\code{\link[=stamp_notes]{stamp_notes()}},
+\code{\link[=stamp_tabset]{stamp_tabset()}}
 }
 \concept{stamp-blocks}

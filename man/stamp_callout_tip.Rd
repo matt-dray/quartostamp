@@ -31,10 +31,10 @@ The output looks like this if the user hadn't selected any text:
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
 }
 \seealso{
-Other stamp-callouts: 
-\code{\link{stamp_callout_caution}()},
-\code{\link{stamp_callout_important}()},
-\code{\link{stamp_callout_note}()},
-\code{\link{stamp_callout_warning}()}
+Other stamp-callouts:
+\code{\link[=stamp_callout_caution]{stamp_callout_caution()}},
+\code{\link[=stamp_callout_important]{stamp_callout_important()}},
+\code{\link[=stamp_callout_note]{stamp_callout_note()}},
+\code{\link[=stamp_callout_warning]{stamp_callout_warning()}}
 }
 \concept{stamp-callouts}

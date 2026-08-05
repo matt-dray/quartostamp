@@ -28,7 +28,7 @@ The output looks like this if the user hadn't selected any text:
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
 }
 \seealso{
-Other stamp-lists: 
-\code{\link{stamp_nonincremental}()}
+Other stamp-lists:
+\code{\link[=stamp_nonincremental]{stamp_nonincremental()}}
 }
 \concept{stamp-lists}

@@ -27,10 +27,10 @@ Speaker notes (press 's' when presenting to switch to speaker mode).
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
 }
 \seealso{
-Other stamp-blocks: 
-\code{\link{stamp_aside}()},
-\code{\link{stamp_columns}()},
-\code{\link{stamp_footer}()},
-\code{\link{stamp_tabset}()}
+Other stamp-blocks:
+\code{\link[=stamp_aside]{stamp_aside()}},
+\code{\link[=stamp_columns]{stamp_columns()}},
+\code{\link[=stamp_footer]{stamp_footer()}},
+\code{\link[=stamp_tabset]{stamp_tabset()}}
 }
 \concept{stamp-blocks}

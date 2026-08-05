@@ -29,7 +29,7 @@ The output looks like this if the user hadn't selected any text:
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
 }
 \seealso{
-Other stamp-lists: 
-\code{\link{stamp_incremental}()}
+Other stamp-lists:
+\code{\link[=stamp_incremental]{stamp_incremental()}}
 }
 \concept{stamp-lists}

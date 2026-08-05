@@ -23,7 +23,7 @@ Output looks like this:
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
 }
 \seealso{
-Other stamp-classes: 
-\code{\link{stamp_scrollable}()}
+Other stamp-classes:
+\code{\link[=stamp_scrollable]{stamp_scrollable()}}
 }
 \concept{stamp-classes}

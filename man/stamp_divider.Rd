@@ -24,7 +24,7 @@ The output looks like this:
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
 }
 \seealso{
-Other stamp-markers: 
-\code{\link{stamp_pause}()}
+Other stamp-markers:
+\code{\link[=stamp_pause]{stamp_pause()}}
 }
 \concept{stamp-markers}
