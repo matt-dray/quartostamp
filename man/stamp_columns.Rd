@@ -10,7 +10,7 @@ stamp_columns()
 Nothing. Text is updated in the active document.
 }
 \description{
-Insert afenced  div for a horizontal two-column layout with percentage widths
+Insert a fenced div for a horizontal two-column layout with percentage widths
 in a Revealjs presentation slide. Will embed text selected by the user into
 the left column and helper text into the right, otherwise skeleton help text
 will be inserted into both columns.
