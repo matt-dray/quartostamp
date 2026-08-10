@@ -42,11 +42,12 @@ function:
 
 And the console will print:
 
-\if{html}{\out{<div class="sourceCode">}}\preformatted{ℹ The footnote '[^some-text]: Insert description.' was added to the clipboard.
-ℹ Paste it at the bottom of your document and adjust the description.
-ℹ Ensure your footnote labels are unique.
+\if{html}{\out{<div class="sourceCode">}}\preformatted{ℹ The footnote '[^some-text]: Insert description.' was added to the clipboard
+ℹ Paste it at the bottom of your document and adjust the description
+ℹ Ensure your footnote labels are unique
 }\if{html}{\out{</div>}}
 }
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
 }
+\concept{stamp-footnotes}

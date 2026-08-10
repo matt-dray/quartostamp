@@ -10,8 +10,8 @@ stamp_tabset()
 Nothing. Text is updated in the active document.
 }
 \description{
-Insert a panel tabset div to a Revealjs presentation slide. Will embed text
-selected by the user into the first tab and skeleton help text into the
+Insert a panel-tabset fenced div to a Revealjs presentation slide. Will embed
+text selected by the user into the first tab and skeleton help text into the
 second, otherwise skeleton help text will be inserted into both tabs.
 }
 \details{
@@ -34,3 +34,11 @@ Content for Tab B
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
 }
+\seealso{
+Other stamp-blocks:
+\code{\link[=stamp_aside]{stamp_aside()}},
+\code{\link[=stamp_columns]{stamp_columns()}},
+\code{\link[=stamp_footer]{stamp_footer()}},
+\code{\link[=stamp_notes]{stamp_notes()}}
+}
+\concept{stamp-blocks}

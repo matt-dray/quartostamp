@@ -1,7 +1,7 @@
 #' Insert Aside
 #'
-#' Insert a div that creates an 'aside' in a Revealjs presentation slide. Will
-#' embed text selected by the user, otherwise skeleton help text will be
+#' Insert a fenced div that creates an 'aside' in a Revealjs presentation slide.
+#' Will embed text selected by the user, otherwise skeleton help text will be
 #' inserted.
 #'
 #' @details
@@ -18,10 +18,12 @@
 #'
 #' @return Nothing. Text is updated in the active document.
 #'
+#' @family stamp-blocks
+#'
 #' @export
 stamp_aside <- function() {
   .replace_text(
-    pre  = "::: aside\n",
+    pre = "::: aside\n",
     body = "Additional commentary.\n",
     post = ":::\n"
   )
@@ -29,7 +31,7 @@ stamp_aside <- function() {
 
 #' Insert 'Note' Callout Block
 #'
-#' Insert a callout-block div of type 'note', which has a blue accent and
+#' Insert a callout-block fenced div of type 'note', which has a blue accent and
 #' a letter 'i' icon. Will embed text selected bythe  user, otherwise
 #' skeleton help text will be inserted.
 #'
@@ -46,6 +48,8 @@ stamp_aside <- function() {
 #'
 #' ```
 #'
+#' @family stamp-callouts
+#'
 #' @references
 #' [The Quarto documentation website.](https://quarto.org/docs/reference/)
 #'
@@ -58,9 +62,9 @@ stamp_callout_note <- function() {
 
 #' Insert 'Warning' Callout Block
 #'
-#' Insert a callout-block div of type 'warning', which has a yellow accent and
-#' a warning-triangle icon. Will embed text selected by the user, otherwise
-#' skeleton help text will be inserted.
+#' Insert a callout-block fenced div of type 'warning', which has a yellow
+#' accent and a warning-triangle icon. Will embed text selected by the user,
+#' otherwise skeleton help text will be inserted.
 #'
 #' @details
 #' The output looks like this if the user hadn't selected any text:
@@ -80,6 +84,8 @@ stamp_callout_note <- function() {
 #'
 #' @return Nothing. Text is updated in the active document.
 #'
+#' @family stamp-callouts
+#'
 #' @export
 stamp_callout_warning <- function() {
   .insert_callout("warning")
@@ -87,9 +93,9 @@ stamp_callout_warning <- function() {
 
 #' Insert 'Important' Callout Block
 #'
-#' Insert a callout-block div of type 'important', which has a red accent and
-#' an exclamation-point icon. Will embed text selected by the user, otherwise
-#' skeleton help text will be inserted.
+#' Insert a callout-block fenced div of type 'important', which has a red accent
+#' and an exclamation-point icon. Will embed text selected by the user,
+#' otherwise skeleton help text will be inserted.
 #'
 #' @details
 #' The output looks like this if the user hadn't selected any text:
@@ -109,6 +115,8 @@ stamp_callout_warning <- function() {
 #'
 #' @return Nothing. Text is updated in the active document.
 #'
+#' @family stamp-callouts
+#'
 #' @export
 stamp_callout_important <- function() {
   .insert_callout("important")
@@ -116,9 +124,9 @@ stamp_callout_important <- function() {
 
 #' Insert 'Tip' Callout Block
 #'
-#' Insert a callout-block div of type 'tip', which has an green accent and
-#' a lightbulb icon. Will embed text selected by the user, otherwise skeleton
-#' help text will be inserted.
+#' Insert a callout-block fenced div of type 'tip', which has an green accent
+#' and a lightbulb icon. Will embed text selected by the user, otherwise
+#' skeleton help text will be inserted.
 #'
 #' @details
 #' The output looks like this if the user hadn't selected any text:
@@ -138,6 +146,8 @@ stamp_callout_important <- function() {
 #'
 #' @return Nothing. Text is updated in the active document.
 #'
+#' @family stamp-callouts
+#'
 #' @export
 stamp_callout_tip <- function() {
   .insert_callout("tip")
@@ -145,9 +155,9 @@ stamp_callout_tip <- function() {
 
 #' Insert 'Caution' Callout Block
 #'
-#' Insert a callout-block div of type 'caution', which has an orange accent and
-#' a traffic-cone icon. Will embed text selected by the user, otherwise skeleton
-#' help text will be inserted.
+#' Insert a callout-block fenced div of type 'caution', which has an orange
+#' accent and a traffic-cone icon. Will embed text selected by the user,
+#' otherwise skeleton help text will be inserted.
 #'
 #' @details
 #' The output looks like this if the user hadn't selected any text:
@@ -167,6 +177,8 @@ stamp_callout_tip <- function() {
 #'
 #' @return Nothing. Text is updated in the active document.
 #'
+#' @family stamp-callouts
+#'
 #' @export
 stamp_callout_caution <- function() {
   .insert_callout("caution")
@@ -174,10 +186,10 @@ stamp_callout_caution <- function() {
 
 #' Insert Column Layout
 #'
-#' Insert a div for a horizontal two-column layout with percentage widths in a
-#' Revealjs presentation slide. Will embed text selected by the user into the
-#' left column and helper text into the right, otherwise skeleton help text will
-#' be inserted into both columns.
+#' Insert a fenced div for a horizontal two-column layout with percentage widths
+#' in a Revealjs presentation slide. Will embed text selected by the user into
+#' the left column and helper text into the right, otherwise skeleton help text
+#' will be inserted into both columns.
 #'
 #' @details
 #' The output looks like this if the user hadn't selected any text:
@@ -200,6 +212,8 @@ stamp_callout_caution <- function() {
 #' [The Quarto documentation website.](https://quarto.org/docs/reference/)
 #'
 #' @return Nothing. Text is updated in the active document.
+#'
+#' @family stamp-blocks
 #'
 #' @export
 stamp_columns <- function() {
@@ -239,8 +253,10 @@ stamp_columns <- function() {
 #'
 #' @return Nothing. Text is updated in the active document.
 #'
+#' @family stamp-markers
+#'
 #' @export
-stamp_divider  <- function() {
+stamp_divider <- function() {
   rstudioapi::insertText("---\n")
 }
 
@@ -262,6 +278,8 @@ stamp_divider  <- function() {
 #' [The Quarto documentation website.](https://quarto.org/docs/reference/)
 #'
 #' @return Nothing. Text is updated in the active document.
+#'
+#' @family stamp-blocks
 #'
 #' @export
 stamp_footer <- function() {
@@ -301,9 +319,9 @@ stamp_footer <- function() {
 #' ```
 #' And the console will print:
 #' ```
-#' ℹ The footnote '[^some-text]: Insert description.' was added to the clipboard.
-#' ℹ Paste it at the bottom of your document and adjust the description.
-#' ℹ Ensure your footnote labels are unique.
+#' ℹ The footnote '[^some-text]: Insert description.' was added to the clipboard
+#' ℹ Paste it at the bottom of your document and adjust the description
+#' ℹ Ensure your footnote labels are unique
 #' ````
 #'
 #' @references
@@ -312,67 +330,56 @@ stamp_footer <- function() {
 #' @return Nothing. Text is updated in the active document and footnote is added
 #'     to the clipboard if `clip = TRUE`.
 #'
+#' @family stamp-footnotes
+#'
 #' @export
 stamp_footnote <- function(clip = TRUE) {
-
   if (!inherits(clip, "logical")) {
-    cli::cli_abort(
-      c(
-        "The argument 'clip' must be logical.",
-        "i" = "Set 'clip' to TRUE or FALSE."
-      )
+    stop("The argument 'clip' must be logical (TRUE or FALSE).")
+  }
+
+  selection_info <- .get_selection()
+  if (is.null(selection_info)) {
+    return(invisible(FALSE))
+  }
+
+  if (!selection_info[["has_text"]]) {
+    inline_replace <- "[^footnote]"
+    foot_insert <- "[^footnote]: Insert description."
+  } else {
+    selected_depunct <- gsub("[[:punct:]]", "", selection_info[["text"]])
+    footnote_label <- gsub("[[:space:]]+", "-", tolower(selected_depunct))
+    footnote_label <- gsub("(^-|-$)", "", footnote_label)
+
+    inline_replace <- paste0(
+      selection_info[["text"]],
+      "[^",
+      footnote_label,
+      "]"
     )
+    foot_insert <- paste0("[^", footnote_label, "]: Insert description.")
   }
 
-  active_doc <- rstudioapi::getActiveDocumentContext()
+  rstudioapi::modifyRange(selection_info$range, inline_replace)
 
-  if (!is.null(active_doc)) {
-
-    selected_text <- active_doc$selection[[1]]$text
-    has_selected_text <- nchar(selected_text) > 0
-
-    if (!has_selected_text) {
-      inline_replace <- "[^footnote]"
-      foot_insert <- paste0("[^footnote]: Insert description.")
-    }
-
-    if (has_selected_text) {
-      selected_depunct <- gsub("[[:punct:]]", "", selected_text)
-      footnote_label <- gsub("[[:space:]]", "-", tolower(selected_depunct))
-      inline_replace <- paste0(selected_text, "[^", footnote_label, "]")
-      foot_insert <- paste0("[^", footnote_label, "]: Insert description.")
-    }
-
-    rstudioapi::modifyRange(active_doc$selection[[1]]$range, inline_replace)
-
-    if (clip) {
-      clipr::write_clip(foot_insert)
-      cli::cli_alert_info(
-        paste0("The footnote '", foot_insert, "' was added to the clipboard.")
-      )
-    }
-
-    if (!clip) {
-      cli::cli_alert_info(paste0("Copy the footnote '", foot_insert, "'."))
-    }
-
-    cli::cli_alert_info("Paste it at the bottom of your document and adjust the description.")
-    cli::cli_alert_info("Ensure your footnote labels are unique.")
-
-    # You can't insert into a new row at the bottom of the document without
-    # first adding a row and saving over the user's document, which doesn't
-    # seem like a good idea. For now, use clipr::write_clip() instead..
-    # foot_location <-
-    #   rstudioapi::document_position(length(active_doc$contents) + 1, 1)
-    # rstudioapi::modifyRange(foot_location, text_replace)
-
+  if (clip) {
+    clipr::write_clip(foot_insert)
+    message("The footnote '", foot_insert, "' was added to the clipboard.")
+  } else {
+    message("Copy the footnote '", foot_insert, "'.")
   }
 
+  message(
+    "Paste it at the bottom of your document and adjust the description.\n",
+    "Ensure your footnote labels are unique."
+  )
+
+  invisible(TRUE)
 }
 
 #' Insert Incremental List
 #'
-#' Insert a list-containing div in a Revealjs presentation slide that is
+#' Insert a list-containing fenced div in a Revealjs presentation slide that is
 #' revealed incrementally. Will embed text selected by the user, otherwise
 #' skeleton help text will be inserted.
 #'
@@ -391,6 +398,8 @@ stamp_footnote <- function(clip = TRUE) {
 #'
 #' @return Nothing. Text is updated in the active document.
 #'
+#' @family stamp-lists
+#'
 #' @export
 stamp_incremental <- function() {
   .replace_text(
@@ -405,9 +414,10 @@ stamp_incremental <- function() {
 
 #' Insert Non-Incremental List
 #'
-#' Insert a list-containing div to a Revealjs presentation slide that is not
-#' revealed incrementally  (overrides a global incremental reveal). Will embed
-#' text selected by the user, otherwise skeleton help text will be inserted.
+#' Insert a list-containing fenced div to a Revealjs presentation slide that is
+#' not revealed incrementally  (overrides a global incremental reveal). Will
+#' embed text selected by the user, otherwise skeleton help text will be
+#' inserted.
 #'
 #' @details
 #' The output looks like this if the user hadn't selected any text:
@@ -423,6 +433,8 @@ stamp_incremental <- function() {
 #' [The Quarto documentation website.](https://quarto.org/docs/reference/)
 #'
 #' @return Nothing. Text is updated in the active document.
+#'
+#' @family stamp-lists
 #'
 #' @export
 stamp_nonincremental <- function() {
@@ -452,6 +464,8 @@ stamp_nonincremental <- function() {
 #'
 #' @return Nothing. Text is updated in the active document.
 #'
+#' @family stamp-markers
+#'
 #' @export
 stamp_pause <- function() {
   rstudioapi::insertText(". . .\n")
@@ -459,8 +473,9 @@ stamp_pause <- function() {
 
 #' Insert Speaker Notes
 #'
-#' Insert a speaker notes div in a Revealjs presentation slide. Will embed
-#' text selected by the user, otherwise skeleton help text will be inserted.
+#' Insert a speaker-notes fenced div in a Revealjs presentation slide. Will
+#' embed text selected by the user, otherwise skeleton help text will be
+#' inserted.
 #'
 #' @details
 #' The output looks like this if the user hadn't selected any text:
@@ -476,11 +491,16 @@ stamp_pause <- function() {
 #'
 #' @return Nothing. Text is updated in the active document.
 #'
+#' @family stamp-blocks
+#'
 #' @export
 stamp_notes <- function() {
   .replace_text(
-    pre  = "::: {.notes}\n",
-    body = "Speaker notes (press 's' when presenting to switch to speaker mode).\n",
+    pre = "::: {.notes}\n",
+    body = paste(
+      "Speaker notes",
+      "(press 's' when presenting to switch to speaker mode).\n"
+    ),
     post = ":::\n"
   )
 }
@@ -500,6 +520,8 @@ stamp_notes <- function() {
 #' [The Quarto documentation website.](https://quarto.org/docs/reference/)
 #'
 #' @return Nothing. Text is updated in the active document.
+#'
+#' @family stamp-classes
 #'
 #' @export
 stamp_smaller <- function() {
@@ -522,6 +544,8 @@ stamp_smaller <- function() {
 #'
 #' @return Nothing. Text is updated in the active document.
 #'
+#' @family stamp-classes
+#'
 #' @export
 stamp_scrollable <- function() {
   rstudioapi::insertText("{.scrollable}")
@@ -529,8 +553,8 @@ stamp_scrollable <- function() {
 
 #' Insert Tabset
 #'
-#' Insert a panel tabset div to a Revealjs presentation slide. Will embed text
-#' selected by the user into the first tab and skeleton help text into the
+#' Insert a panel-tabset fenced div to a Revealjs presentation slide. Will embed
+#' text selected by the user into the first tab and skeleton help text into the
 #' second, otherwise skeleton help text will be inserted into both tabs.
 #'
 #' @details
@@ -554,6 +578,8 @@ stamp_scrollable <- function() {
 #' [The Quarto documentation website.](https://quarto.org/docs/reference/)
 #'
 #' @return Nothing. Text is updated in the active document.
+#'
+#' @family stamp-blocks
 #'
 #' @export
 stamp_tabset <- function() {

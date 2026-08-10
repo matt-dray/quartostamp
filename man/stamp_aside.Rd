@@ -10,8 +10,8 @@ stamp_aside()
 Nothing. Text is updated in the active document.
 }
 \description{
-Insert a div that creates an 'aside' in a Revealjs presentation slide. Will
-embed text selected by the user, otherwise skeleton help text will be
+Insert a fenced div that creates an 'aside' in a Revealjs presentation slide.
+Will embed text selected by the user, otherwise skeleton help text will be
 inserted.
 }
 \details{
@@ -26,3 +26,11 @@ Additional commentary.
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
 }
+\seealso{
+Other stamp-blocks:
+\code{\link[=stamp_columns]{stamp_columns()}},
+\code{\link[=stamp_footer]{stamp_footer()}},
+\code{\link[=stamp_notes]{stamp_notes()}},
+\code{\link[=stamp_tabset]{stamp_tabset()}}
+}
+\concept{stamp-blocks}

@@ -10,8 +10,9 @@ stamp_notes()
 Nothing. Text is updated in the active document.
 }
 \description{
-Insert a speaker notes div in a Revealjs presentation slide. Will embed
-text selected by the user, otherwise skeleton help text will be inserted.
+Insert a speaker-notes fenced div in a Revealjs presentation slide. Will
+embed text selected by the user, otherwise skeleton help text will be
+inserted.
 }
 \details{
 The output looks like this if the user hadn't selected any text:
@@ -25,3 +26,11 @@ Speaker notes (press 's' when presenting to switch to speaker mode).
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
 }
+\seealso{
+Other stamp-blocks:
+\code{\link[=stamp_aside]{stamp_aside()}},
+\code{\link[=stamp_columns]{stamp_columns()}},
+\code{\link[=stamp_footer]{stamp_footer()}},
+\code{\link[=stamp_tabset]{stamp_tabset()}}
+}
+\concept{stamp-blocks}

@@ -10,10 +10,10 @@ stamp_columns()
 Nothing. Text is updated in the active document.
 }
 \description{
-Insert a div for a horizontal two-column layout with percentage widths in a
-Revealjs presentation slide. Will embed text selected by the user into the
-left column and helper text into the right, otherwise skeleton help text will
-be inserted into both columns.
+Insert a fenced div for a horizontal two-column layout with percentage widths
+in a Revealjs presentation slide. Will embed text selected by the user into
+the left column and helper text into the right, otherwise skeleton help text
+will be inserted into both columns.
 }
 \details{
 The output looks like this if the user hadn't selected any text:
@@ -35,3 +35,11 @@ Right column
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
 }
+\seealso{
+Other stamp-blocks:
+\code{\link[=stamp_aside]{stamp_aside()}},
+\code{\link[=stamp_footer]{stamp_footer()}},
+\code{\link[=stamp_notes]{stamp_notes()}},
+\code{\link[=stamp_tabset]{stamp_tabset()}}
+}
+\concept{stamp-blocks}

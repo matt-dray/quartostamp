@@ -10,9 +10,9 @@ stamp_callout_important()
 Nothing. Text is updated in the active document.
 }
 \description{
-Insert a callout-block div of type 'important', which has a red accent and
-an exclamation-point icon. Will embed text selected by the user, otherwise
-skeleton help text will be inserted.
+Insert a callout-block fenced div of type 'important', which has a red accent
+and an exclamation-point icon. Will embed text selected by the user,
+otherwise skeleton help text will be inserted.
 }
 \details{
 The output looks like this if the user hadn't selected any text:
@@ -30,3 +30,11 @@ The output looks like this if the user hadn't selected any text:
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
 }
+\seealso{
+Other stamp-callouts:
+\code{\link[=stamp_callout_caution]{stamp_callout_caution()}},
+\code{\link[=stamp_callout_note]{stamp_callout_note()}},
+\code{\link[=stamp_callout_tip]{stamp_callout_tip()}},
+\code{\link[=stamp_callout_warning]{stamp_callout_warning()}}
+}
+\concept{stamp-callouts}

@@ -22,3 +22,8 @@ Output looks like this:
 \references{
 \href{https://quarto.org/docs/reference/}{The Quarto documentation website.}
 }
+\seealso{
+Other stamp-classes:
+\code{\link[=stamp_scrollable]{stamp_scrollable()}}
+}
+\concept{stamp-classes}
